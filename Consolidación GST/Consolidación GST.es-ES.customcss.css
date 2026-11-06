@@ -1,0 +1,266 @@
+/* =========================================================
+   ESTILOS ESPECÍFICOS: OBJETIVO 5.1 Y LISTAS DE ACCIONES
+   ========================================================= */
+
+/* Contenedor principal */
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+}
+
+/* Lista estandarizada de logros / acciones */
+.meta-achievements-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 15px 0 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+.meta-achievements-list li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    color: #334155 !important;
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.achievement-icon {
+    color: #0284C7 !important;
+    font-size: 16px !important;
+    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Estilos del selector de años institucional */
+.years-container-box {
+    background-color: #F0F4F8 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    margin-bottom: 25px !important;
+    border: 1px solid #D9E2EC !important;
+}
+
+.years-tabs {
+    display: flex !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+}
+
+.year-btn {
+    background-color: #FFFFFF !important;
+    color: #003B70 !important;
+    border: 1px solid #CBD5E1 !important;
+    padding: 8px 18px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.year-btn:hover {
+    background-color: #E2E8F0 !important;
+    border-color: #003B70 !important;
+}
+
+.year-btn.active {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    border-color: #003B70 !important;
+    box-shadow: 0px 4px 8px rgba(0, 59, 112, 0.2) !important;
+}
+
+/* Control de visibilidad de los años */
+.year-content {
+    display: none !important;
+}
+
+.year-content.active {
+    display: block !important;
+}
+
+/* Tarjeta principal de la meta (Borde general redondeado) */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 24px !important;
+    overflow: hidden !important;
+}
+
+/* Cabecera gris superior */
+.meta-card-header {
+    background: #F8FAFC !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Badge azul con bordes curvos */
+.meta-tag {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 5px 12px !important;
+    border-radius: 6px !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Cuerpo interno de la tarjeta */
+.meta-card-body {
+    padding: 24px !important;
+}
+
+.meta-description {
+    font-size: 15px !important;
+    color: #1E293B !important;
+    margin: 0 0 6px 0 !important;
+    line-height: 1.5 !important;
+}
+
+.meta-reference {
+    font-size: 13px !important;
+    color: #64748B !important;
+    margin-bottom: 20px !important;
+}
+
+/* Cápsulas redondas con borde azul claro */
+.vinculacion-pill-action {
+    background: #F0F9FF !important;
+    border: 1px solid #BAE6FD !important;
+    color: #0369A1 !important;
+    padding: 14px 18px !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+.action-icon {
+    color: #0284C7 !important;
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Caja de alerta/estado institucional */
+.status-alert-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    padding: 16px 20px !important;
+    margin-top: 15px !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.alert-blue {
+    border-left: 5px solid #1D4ED8 !important;
+}
+
+.alert-icon-wrap {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+}
+
+.alert-content h4 {
+    margin: 0 0 2px 0 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.alert-content p {
+    margin: 0 !important;
+    font-size: 13.5px !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+/* Estilos de la barra compacta centrada */
+.sub-navbar {
+    background-color: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.sub-navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* <-- ESTO CENTRA TODO EL CONTENIDO HORIZONTALMENTE */
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub-nav-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #003B70;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.sub-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center; /* <-- Asegura que los botones internos también se centren si se pasan de línea */
+}
+
+.sub-nav-item {
+    color: #334155;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+}
+
+.sub-nav-item:hover {
+    background-color: #E2E8F0;
+    color: #003B70;
+    border-color: #94A3B8;
+}
+
+.sub-nav-item.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+}

@@ -1,0 +1,158 @@
+/* =========================================================
+   ESTILOS DE 2 COLUMNAS Y VISOR FUNDATEC (EICS)
+   ========================================================= */
+
+.fundatec-split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 24px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .fundatec-split-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Columna Izquierda: Tarjetas */
+.cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.institutional-card {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.card-left-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.institutional-card:hover, .institutional-card.active-card {
+    border-color: #003B70;
+    box-shadow: 0px 6px 16px rgba(0, 59, 112, 0.1);
+}
+
+.institutional-card:hover .card-left-indicator,
+.institutional-card.active-card .card-left-indicator {
+    background-color: #003B70;
+}
+
+.card-content-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    gap: 14px;
+}
+
+.card-icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: #E8F0FE;
+    color: #003B70;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.card-text-box {
+    flex-grow: 1;
+}
+
+.card-text-box h3 {
+    color: #003B70;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.card-text-box p {
+    color: #64748B;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.card-arrow-box {
+    color: #94A3B8;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Columna Derecha: Visor */
+.viewer-column {
+    position: sticky;
+    top: 20px;
+}
+
+.pdf-viewer-card {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewer-top-bar {
+    background-color: #FFFFFF;
+    padding: 14px 20px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewer-label-title {
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.viewer-status-default {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #93C5FD;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.viewer-sub-bar {
+    background-color: #F8FAFC;
+    color: #334155;
+    font-size: 13.5px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #E2E8F0;
+    line-height: 1.4;
+}
+
+.viewer-display-body {
+    background-color: #F1F5F9;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

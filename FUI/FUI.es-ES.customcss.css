@@ -1,0 +1,228 @@
+/* =========================================================
+   ESTILOS INSTITUCIONALES EICS (PROGRAMA FUI)
+   ========================================================= */
+
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 10px 15px !important;
+}
+
+.objective-header {
+    margin-bottom: 20px !important;
+}
+
+.objective-badge {
+    background-color: #E8F0FE !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+}
+
+.objective-title {
+    color: #003B70 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+    line-height: 1.3 !important;
+}
+
+/* Tarjeta de Meta */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 5px solid #003B70 !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.meta-tag {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.meta-description {
+    font-size: 15.5px !important;
+    color: #2D3748 !important;
+    margin: 8px 0 4px 0 !important;
+    line-height: 1.5 !important;
+}
+
+.meta-reference {
+    font-size: 13px !important;
+    color: #64748B !important;
+    background: #F8FAFC !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    display: inline-block !important;
+}
+
+/* CAJA AZUL CLARO ENVOLVENTE PARA LOS BOTONES DE AÑOS */
+.years-container-box {
+    background-color: #F0F4F9;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 25px;
+}
+
+.years-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Botones de Selector de Años */
+.year-btn {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    color: #003B70;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.year-btn:hover {
+    background: #E8F0FE;
+    border-color: #003B70;
+}
+
+.year-btn.active {
+    background: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+    box-shadow: 0px 2px 6px rgba(0, 59, 112, 0.25);
+}
+
+.year-content {
+    display: none;
+}
+
+.year-content.active {
+    display: block;
+}
+
+/* Botones de Pestañas */
+.area-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    color: #003B70;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background: #E8F0FE;
+    border-color: #003B70;
+}
+
+.tab-btn.active {
+    background: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+    box-shadow: 0px 2px 6px rgba(0, 59, 112, 0.25);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.area-subtitle {
+    color: #003B70;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Tablas */
+.table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E2E8F0;
+}
+
+.custom-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    color: #2D3748;
+}
+
+.custom-data-table th {
+    background-color: #003B70;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border: 1px solid #002D57;
+}
+
+.custom-data-table td {
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+    vertical-align: middle;
+}
+
+.custom-data-table tbody tr:hover {
+    background-color: #F1F5F9;
+}
+
+.docente-cell {
+    background-color: #F8FAFC;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.table-note {
+    font-size: 12.5px;
+    color: #64748B;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+/* Tarjeta Destacada de Síntesis (Tabla 15) */
+.verano-card {
+    box-shadow: 0px 4px 14px rgba(2, 132, 199, 0.08) !important;
+}
+
+.verano-card .custom-data-table th {
+    background-color: #0369A1 !important;
+    border-color: #0284C7 !important;
+}

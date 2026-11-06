@@ -1,0 +1,438 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; padding: 16px; margin: 5px 0px;">
+      
+      <!-- NAVEGACIÓN SECUNDARIA COMPACTA -->
+      <div class="sub-navbar">
+        <div class="sub-navbar-container">
+          <span class="sub-nav-title"><i class="fa fa-folder-open-o"></i> Secciones:</span>
+          <div class="sub-nav-links">
+            <a href="~/Consolidación-GST/" id="menu-consolidacion" class="sub-nav-item">Consolidación GST</a>
+            <a href="~/Divulgación-EICS/" id="menu-divulgacion" class="sub-nav-item">Divulgación EICS</a>
+            <a href="~/Plan-de-formación/" id="menu-formacion" class="sub-nav-item">Plan de formación</a>
+            <a href="~/Mantenimineto-y-renovación/" id="menu-mantenimiento" class="sub-nav-item">Mantenimiento y renovación</a>
+            <a href="~/Estabilidad-laboral/" id="menu-estabilidad" class="sub-nav-item">Estabilidad laboral</a>
+            <a href="~/Gestion-administrativa/" id="menu-gestion" class="sub-nav-item">Gestión administrativa</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="objective-container">
+        <!-- ENCABEZADO -->
+        <div class="objective-header">
+          <span class="objective-badge">PLAN DE FORMACIÓN</span>
+          <h1 class="objective-title">5.3 Fortalecer las habilidades del personal de la escuela</h1>
+        </div>
+
+        <!-- SELECTOR DE AÑOS -->
+        <div class="years-container-box">
+          <div class="years-tabs">
+            <button class="year-btn active" onclick="openYear(event, 'year-2025')">2025</button>
+            <button class="year-btn" onclick="openYear(event, 'year-2026')">2026</button>
+            <button class="year-btn" onclick="openYear(event, 'year-2027')">2027</button>
+            <button class="year-btn" onclick="openYear(event, 'year-2028')">2028</button>
+            <button class="year-btn" onclick="openYear(event, 'year-2029')">2029</button>
+          </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- AÑO 2025                                                          -->
+        <!-- ================================================================= -->
+        <div id="year-2025" class="year-content active">
+          <div class="meta-card">
+            <div class="meta-card-header"><span class="meta-tag">META 5.3.1 (2025)</span></div>
+            <div class="meta-card-body">
+              <p class="meta-description">Desarrollar 1 proceso de mejora al Plan de Formación y Capacitación de la escuela en el 2029.</p>
+
+              <!-- EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR -->
+              <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <button onclick="toggleContent(this, 'ejes-itcr-2025')" style="width: 100%; background: #003B70; color: #FFFFFF; font-weight: bold; text-align: center; padding: 12px 15px; font-size: 13px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <span><i class="fa fa-cubes me-2"></i> EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR</span>
+                  <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+                </button>
+                <div id="ejes-itcr-2025" style="display: none; padding: 15px; background: #F8FAFC; border-top: 1px solid #CBD5E1;">
+                  <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; text-align: center;">
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Agua</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Aire</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Alimentos</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Cultura</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Educación</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Energía</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Hábitat</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Industria</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Salud</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CAJA APARTE PARA LAS ÁREAS DE CONOCIMIENTO (EN UNA SOLA FILA HORIZONTAL DE 4 COLUMNAS) -->
+              <div style="margin-top: 30px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
+                <div class="category-badge-box" style="margin-bottom: 20px; text-align: center;">
+                  <span class="category-pill" style="background-color: #003B70; color: #fff; padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; display: inline-block;">
+                    ÁREAS DEL CONOCIMIENTO DE LA ESCUELA DE IDIOMAS Y CIENCIAS SOCIALES
+                  </span>
+                </div>
+
+                <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                  
+                  <!-- Tarjeta 1 -->
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                      <div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Sostenibilidad turística</div>
+                    </div>
+                    <div>
+                      <div class="toggle-buttons-row">
+                        <button class="toggle-btn" onclick="toggleContent(this, 'nec-1-2025')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;">
+                          <i class="fa fa-angle-down"></i> Necesidades
+                        </button>
+                      </div>
+                      <div id="nec-1-2025" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">
+                        Se refiere a la administración turística, emprendedurismo turístico, planificación del turismo, servicios turísticos, economía del turismo, tecnología, sostenibilidad, desarrollo del turismo, ecoturismo, innovación del turismo, inteligencia artificial en el turismo, gestión ambiental en el turismo, patrimonio cultural y natural, gobernanza del turismo, y globalización[cite: 12, 13].
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tarjeta 2 -->
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                      <div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Educación, tecnología e innovación en los procesos de enseñanza-aprendizaje</div>
+                    </div>
+                    <div>
+                      <div class="toggle-buttons-row">
+                        <button class="toggle-btn" onclick="toggleContent(this, 'nec-2-2025')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;">
+                          <i class="fa fa-angle-down"></i> Necesidades
+                        </button>
+                      </div>
+                      <div id="nec-2-2025" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">
+                        Se refiere a los métodos y estrategias pedagógicas de enseñanza, aprendizaje, diseño curricular, evaluación, investigación educativa, innovación educativa, administración educativa, integridad académica, lingüística aplicada, la enseñanza y aprendizaje del inglés y el español, la inteligencia artificial en los procesos de enseñanza y aprendizaje, modalidades de educación (virtual, bimodal, remota, por competencias), el uso ético de tecnologías y entornos virtuales, educación no formal, y alfabetización académica[cite: 12, 13].
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tarjeta 3 -->
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                      <div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Cultura, literatura y humanidades</div>
+                    </div>
+                    <div>
+                      <div class="toggle-buttons-row">
+                        <button class="toggle-btn" onclick="toggleContent(this, 'nec-3-2025')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;">
+                          <i class="fa fa-angle-down"></i> Necesidades
+                        </button>
+                      </div>
+                      <div id="nec-3-2025" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">
+                        Se refiere al humanismo, globalización, lenguas y literatura, las culturas costarricenses, escritura creativa, y cultura universal[cite: 12, 13].
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tarjeta 4 -->
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                      <div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Filosofía, sociología, derechos humanos y género</div>
+                    </div>
+                    <div>
+                      <div class="toggle-buttons-row">
+                        <button class="toggle-btn" onclick="toggleContent(this, 'nec-4-2025')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;">
+                          <i class="fa fa-angle-down"></i> Necesidades
+                        </button>
+                      </div>
+                      <div id="nec-4-2025" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">
+                        Se refiere a la filosofía universal, filosofía de la ciencia, ciencia y tecnología, economía y sociedad, participación ciudadana, democracia, desarrollo rural, organización local, derechos humanos, estudios de género, ordenamiento jurídico nacional e internacional, éticas aplicadas (ética en la ingeniería, ética de los negocios, ética ambiental, ética informática, agroética, bioética, neuroética, ética de la ciencia y de la tecnología, ética en turismo, ética profesional, ética en la inteligencia artificial), y metodología de la investigación[cite: 12, 13].
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- AÑOS 2026, 2027, 2028 y 2029 (CON LA MISMA ESTRUCTURA HORIZONTAL) -->
+
+        <!-- AÑO 2026 -->
+        <div id="year-2026" class="year-content">
+          <div class="meta-card">
+            <div class="meta-card-header"><span class="meta-tag">META 5.3.1 (2026)</span></div>
+            <div class="meta-card-body">
+              <p class="meta-description">Desarrollar 1 proceso de mejora al Plan de Formación y Capacitación de la escuela en el 2029.</p>
+
+              <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <button onclick="toggleContent(this, 'ejes-itcr-2026')" style="width: 100%; background: #003B70; color: #FFFFFF; font-weight: bold; text-align: center; padding: 12px 15px; font-size: 13px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <span><i class="fa fa-cubes me-2"></i> EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR</span>
+                  <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+                </button>
+                <div id="ejes-itcr-2026" style="display: none; padding: 15px; background: #F8FAFC; border-top: 1px solid #CBD5E1;">
+                  <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; text-align: center;">
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Agua</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Aire</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Alimentos</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Cultura</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Educación</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Energía</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Hábitat</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Industria</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Salud</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
+                <div class="category-badge-box" style="margin-bottom: 20px; text-align: center;">
+                  <span class="category-pill" style="background-color: #003B70; color: #fff; padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; display: inline-block;">
+                    ÁREAS DEL CONOCIMIENTO DE LA ESCUELA DE IDIOMAS Y CIENCIAS SOCIALES
+                  </span>
+                </div>
+
+                <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Sostenibilidad turística</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-1-2026')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-1-2026" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la administración turística, emprendedurismo turístico, planificación del turismo, servicios turísticos, economía del turismo, tecnología, sostenibilidad, desarrollo del turismo, ecoturismo, innovación del turismo, inteligencia artificial en el turismo, gestión ambiental en el turismo, patrimonio cultural y natural, gobernanza del turismo, y globalización[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Educación, tecnología e innovación en los procesos de enseñanza-aprendizaje</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-2-2026')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-2-2026" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a los métodos y estrategias pedagógicas de enseñanza, aprendizaje, diseño curricular, evaluación, investigación educativa, innovación educativa, administración educativa, integridad académica, lingüística aplicada, la enseñanza y aprendizaje del inglés y el español, la inteligencia artificial en los procesos de enseñanza y aprendizaje, modalidades de educación (virtual, bimodal, remota, por competencias), el uso ético de tecnologías y entornos virtuales, educación no formal, y alfabetización académica[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Cultura, literatura y humanidades</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-3-2026')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-3-2026" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere al humanismo, globalización, lenguas y literatura, las culturas costarricenses, escritura creativa, y cultura universal[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Filosofía, sociología, derechos humanos y género</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-4-2026')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-4-2026" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la filosofía universal, filosofía de la ciencia, ciencia y tecnología, economía y sociedad, participación ciudadana, democracia, desarrollo rural, organización local, derechos humanos, estudios de género, ordenamiento jurídico nacional e internacional, éticas aplicadas (ética en la ingeniería, ética de los negocios, ética ambiental, ética informática, agroética, bioética, neuroética, ética de la ciencia y de la tecnología, ética en turismo, ética profesional, ética en la inteligencia artificial), y metodología de la investigación[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- AÑO 2027 -->
+        <div id="year-2027" class="year-content">
+          <div class="meta-card">
+            <div class="meta-card-header"><span class="meta-tag">META 5.3.1 (2027)</span></div>
+            <div class="meta-card-body">
+              <p class="meta-description">Desarrollar 1 proceso de mejora al Plan de Formación y Capacitación de la escuela en el 2029.</p>
+
+              <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <button onclick="toggleContent(this, 'ejes-itcr-2027')" style="width: 100%; background: #003B70; color: #FFFFFF; font-weight: bold; text-align: center; padding: 12px 15px; font-size: 13px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <span><i class="fa fa-cubes me-2"></i> EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR</span>
+                  <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+                </button>
+                <div id="ejes-itcr-2027" style="display: none; padding: 15px; background: #F8FAFC; border-top: 1px solid #CBD5E1;">
+                  <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; text-align: center;">
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Agua</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Aire</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Alimentos</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Cultura</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Educación</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Energía</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Hábitat</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Industria</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Salud</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
+                <div class="category-badge-box" style="margin-bottom: 20px; text-align: center;">
+                  <span class="category-pill" style="background-color: #003B70; color: #fff; padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; display: inline-block;">
+                    ÁREAS DEL CONOCIMIENTO DE LA ESCUELA DE IDIOMAS Y CIENCIAS SOCIALES
+                  </span>
+                </div>
+
+                <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Sostenibilidad turística</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-1-2027')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-1-2027" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la administración turística, emprendedurismo turístico, planificación del turismo, servicios turísticos, economía del turismo, tecnología, sostenibilidad, desarrollo del turismo, ecoturismo, innovación del turismo, inteligencia artificial en el turismo, gestión ambiental en el turismo, patrimonio cultural y natural, gobernanza del turismo, y globalización[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Educación, tecnología e innovación en los procesos de enseñanza-aprendizaje</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-2-2027')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-2-2027" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a los métodos y estrategias pedagógicas de enseñanza, aprendizaje, diseño curricular, evaluación, investigación educativa, innovación educativa, administración educativa, integridad académica, lingüística aplicada, la enseñanza y aprendizaje del inglés y el español, la inteligencia artificial en los procesos de enseñanza y aprendizaje, modalidades de educación (virtual, bimodal, remota, por competencias), el uso ético de tecnologías y entornos virtuales, educación no formal, y alfabetización académica[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Cultura, literatura y humanidades</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-3-2027')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-3-2027" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere al humanismo, globalización, lenguas y literatura, las culturas costarricenses, escritura creativa, y cultura universal[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Filosofía, sociología, derechos humanos y género</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-4-2027')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-4-2027" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la filosofía universal, filosofía de la ciencia, ciencia y tecnología, economía y sociedad, participación ciudadana, democracia, desarrollo rural, organización local, derechos humanos, estudios de género, ordenamiento jurídico nacional e internacional, éticas aplicadas (ética en la ingeniería, ética de los negocios, ética ambiental, ética informática, agroética, bioética, neuroética, ética de la ciencia y de la tecnología, ética en turismo, ética profesional, ética en la inteligencia artificial), y metodología de la investigación[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- AÑO 2028 -->
+        <div id="year-2028" class="year-content">
+          <div class="meta-card">
+            <div class="meta-card-header"><span class="meta-tag">META 5.3.1 (2028)</span></div>
+            <div class="meta-card-body">
+              <p class="meta-description">Desarrollar 1 proceso de mejora al Plan de Formación y Capacitación de la escuela en el 2029.</p>
+
+              <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <button onclick="toggleContent(this, 'ejes-itcr-2028')" style="width: 100%; background: #003B70; color: #FFFFFF; font-weight: bold; text-align: center; padding: 12px 15px; font-size: 13px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <span><i class="fa fa-cubes me-2"></i> EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR</span>
+                  <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+                </button>
+                <div id="ejes-itcr-2028" style="display: none; padding: 15px; background: #F8FAFC; border-top: 1px solid #CBD5E1;">
+                  <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; text-align: center;">
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Agua</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Aire</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Alimentos</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Cultura</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Educación</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Energía</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Hábitat</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Industria</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Salud</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
+                <div class="category-badge-box" style="margin-bottom: 20px; text-align: center;">
+                  <span class="category-pill" style="background-color: #003B70; color: #fff; padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; display: inline-block;">
+                    ÁREAS DEL CONOCIMIENTO DE LA ESCUELA DE IDIOMAS Y CIENCIAS SOCIALES
+                  </span>
+                </div>
+
+                <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Sostenibilidad turística</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-1-2028')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-1-2028" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la administración turística, emprendedurismo turístico, planificación del turismo, servicios turísticos, economía del turismo, tecnología, sostenibilidad, desarrollo del turismo, ecoturismo, innovación del turismo, inteligencia artificial en el turismo, gestión ambiental en el turismo, patrimonio cultural y natural, gobernanza del turismo, y globalización[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Educación, tecnología e innovación en los procesos de enseñanza-aprendizaje</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-2-2028')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-2-2028" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere aos métodos y estrategias pedagógicas de enseñanza, aprendizaje, diseño curricular, evaluación, investigación educativa, innovación educativa, administración educativa, integridad académica, lingüística aplicada, la enseñanza y aprendizaje del inglés y el español, la inteligencia artificial en los procesos de enseñanza y aprendizaje, modalidades de educación (virtual, bimodal, remota, por competencias), el uso ético de tecnologías y entornos virtuales, educación no formal, y alfabetización académica[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Cultura, literatura y humanidades</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-3-2028')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-3-2028" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere al humanismo, globalización, lenguas y literatura, las culturas costarricenses, escritura creativa, y cultura universal[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Filosofía, sociología, derechos humanos y género</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-4-2028')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-4-2028" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la filosofía universal, filosofía de la ciencia, ciencia y tecnología, economía y sociedad, participación ciudadana, democracia, desarrollo rural, organización local, derechos humanos, estudios de género, ordenamiento jurídico nacional e internacional, éticas aplicadas (ética en la ingeniería, ética de los negocios, ética ambiental, ética informática, agroética, bioética, neuroética, ética de la ciencia y de la tecnología, ética en turismo, ética profesional, ética en la inteligencia artificial), y metodología de la investigación[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- AÑO 2029 -->
+        <div id="year-2029" class="year-content">
+          <div class="meta-card">
+            <div class="meta-card-header"><span class="meta-tag">META 5.3.1 (2029)</span></div>
+            <div class="meta-card-body">
+              <p class="meta-description">Desarrollar 1 proceso de mejora al Plan de Formación y Capacitación de la escuela en el 2029.</p>
+
+              <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; overflow: hidden; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <button onclick="toggleContent(this, 'ejes-itcr-2029')" style="width: 100%; background: #003B70; color: #FFFFFF; font-weight: bold; text-align: center; padding: 12px 15px; font-size: 13px; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  <span><i class="fa fa-cubes me-2"></i> EJES DE CONOCIMIENTO ESTRATÉGICOS DEL ITCR</span>
+                  <i class="fa fa-angle-down" style="font-size: 16px;"></i>
+                </button>
+                <div id="ejes-itcr-2029" style="display: none; padding: 15px; background: #F8FAFC; border-top: 1px solid #CBD5E1;">
+                  <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; text-align: center;">
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Agua</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Aire</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Alimentos</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Cultura</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Educación</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Energía</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Hábitat</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Industria</div>
+                    <div style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #003B70;">Salud</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
+                <div class="category-badge-box" style="margin-bottom: 20px; text-align: center;">
+                  <span class="category-pill" style="background-color: #003B70; color: #fff; padding: 8px 18px; border-radius: 20px; font-weight: bold; font-size: 13px; display: inline-block;">
+                    ÁREAS DEL CONOCIMIENTO DE LA ESCUELA DE IDIOMAS Y CIENCIAS SOCIALES
+                  </span>
+                </div>
+
+                <div class="cards-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Sostenibilidad turística</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-1-2029')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-1-2029" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la administración turística, emprendedurismo turístico, planificación del turismo, servicios turísticos, economía del turismo, tecnología, sostenibilidad, desarrollo del turismo, ecoturismo, innovación del turismo, inteligencia artificial en el turismo, gestión ambiental en el turismo, patrimonio cultural y natural, gobernanza del turismo, y globalización[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Educación, tecnología e innovación en los procesos de enseñanza-aprendizaje</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-2-2029')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-2-2029" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a los métodos y estrategias pedagógicas de enseñanza, aprendizaje, diseño curricular, evaluación, investigación educativa, innovación educativa, administración educativa, integridad académica, lingüística aplicada, la enseñanza y aprendizaje del inglés y el español, la inteligencia artificial en los procesos de enseñanza y aprendizaje, modalidades de educación (virtual, bimodal, remota, por competencias), el uso ético de tecnologías y entornos virtuales, educación no formal, y alfabetización académica[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Cultura, literatura y humanidades</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-3-2029')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-3-2029" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere al humanismo, globalización, lenguas y literatura, las culturas costarricenses, escritura creativa, y cultura universal[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                  <div class="custom-collapsible-card" style="background: #fff; border: 1px solid #CBD5E1; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div><div class="card-main-title" style="font-size: 14px; font-weight: bold; color: #003B70; margin-bottom: 12px; min-height: 40px;">Filosofía, sociología, derechos humanos y género</div></div>
+                    <div>
+                      <div class="toggle-buttons-row"><button class="toggle-btn" onclick="toggleContent(this, 'nec-4-2029')" style="width: 100%; background-color: #E2E8F0; color: #003B70; border: none; padding: 6px; border-radius: 6px; font-weight: 600; font-size: 12px; cursor: pointer;"><i class="fa fa-angle-down"></i> Necesidades</button></div>
+                      <div id="nec-4-2029" class="toggle-content-box" style="display: none; margin-top: 10px; padding: 10px; background: #F8FAFC; border-left: 3px solid #003B70; font-size: 12px; color: #334155;">Se refiere a la filosofía universal, filosofía de la ciencia, ciencia y tecnología, economía y sociedad, participación ciudadana, democracia, desarrollo rural, organización local, derechos humanos, estudios de género, ordenamiento jurídico nacional e internacional, éticas aplicadas (ética en la ingeniería, ética de los negocios, ética ambiental, ética informática, agroética, bioética, neuroética, ética de la ciencia y de la tecnología, ética en turismo, ética profesional, ética en la inteligencia artificial), y metodología de la investigación[cite: 12, 13].</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

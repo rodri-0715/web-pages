@@ -1,0 +1,327 @@
+/* =========================================================
+   ESTILOS GENERALES Y ESTRUCTURA
+   ========================================================= */
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 10px 15px !important;
+}
+
+.objective-header {
+    margin-bottom: 20px !important;
+}
+
+.objective-badge {
+    background-color: #E8F0FE !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+}
+
+.objective-title {
+    color: #003B70 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+    line-height: 1.3 !important;
+}
+
+/* =========================================================
+   TARJETA DE META
+   ========================================================= */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 5px solid #003B70 !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.meta-tag {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.meta-description {
+    font-size: 15.5px !important;
+    color: #2D3748 !important;
+    margin: 8px 0 12px 0 !important;
+    line-height: 1.5 !important;
+}
+
+/* =========================================================
+   SELECTOR DE AÑOS DE PRODUCCIÓN
+   ========================================================= */
+.year-btn {
+    background-color: #FFFFFF;
+    color: #003B70;
+    border: 1px solid #CBD5E1;
+    padding: 8px 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.year-btn:hover {
+    background-color: #E2E8F0;
+}
+
+.year-btn.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+}
+
+.year-content {
+    display: none;
+}
+
+.year-content.active {
+    display: block;
+}
+
+/* =========================================================
+   PESTAÑAS DE ÁREAS (INGLÉS, SOCIALES, COMUNICACIÓN, TURISMO)
+   ========================================================= */
+.tabs-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    background-color: #FFFFFF;
+    color: #003B70;
+    border: 1px solid #CBD5E1;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.tab-btn:hover {
+    background-color: #F1F5F9;
+    border-color: #003B70;
+}
+
+.tab-btn.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+    box-shadow: 0px 4px 8px rgba(0, 59, 112, 0.2);
+}
+
+.tab-content {
+    display: none;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+    margin-bottom: 30px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.area-subtitle {
+    color: #003B70;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+   TABLAS Y RESUMEN GENERAL (TABLA 23 CON TURISMO)
+   ========================================================= */
+.summary-standalone-card {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 40px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+.summary-title {
+    color: #003B70;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.summary-badge {
+    background-color: #003B70;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.custom-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    color: #2D3748;
+}
+
+.custom-data-table th {
+    background-color: #003B70;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border: 1px solid #002D57;
+    text-align: left;
+}
+
+.custom-data-table td {
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+    vertical-align: middle;
+}
+
+.custom-data-table tbody tr:hover {
+    background-color: #F1F5F9;
+}
+
+.docente-cell {
+    background-color: #F8FAFC;
+}
+
+.total-cell {
+    color: #003B70;
+}
+
+.total-row {
+    background-color: #F8FAFC;
+    font-weight: bold;
+}
+
+.final-total {
+    background-color: #003B70;
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.table-note {
+    font-size: 12.5px;
+    color: #64748B;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.table-link {
+    color: #003B70;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.table-link:hover {
+    color: #0284C7;
+}
+
+/* =========================================================
+   BARRA NAVEGACIÓN COMPACTA Y CENTRADA (SUBNAVBAR PÍLDORAS)
+   ========================================================= */
+.sub-navbar {
+    background-color: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.sub-navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub-nav-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #003B70;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.sub-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.sub-nav-item {
+    color: #334155;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+}
+
+.sub-nav-item:hover {
+    background-color: #E2E8F0;
+    color: #003B70;
+    border-color: #94A3B8;
+}
+
+.sub-nav-item.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+}

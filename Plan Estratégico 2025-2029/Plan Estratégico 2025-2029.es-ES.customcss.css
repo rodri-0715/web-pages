@@ -1,0 +1,253 @@
+/* ==========================================================================
+   ESTILOS DE LA PÁGINA DE PLAN ESTRATÉGICO
+   ========================================================================== */
+
+/* Banner interactivo del informe general */
+.general-report-banner {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-left: 5px solid #003B70 !important;
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.2s ease !important;
+}
+
+.general-report-banner:hover {
+  background: #F8FAFC !important;
+  border-color: #003B70 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0px 4px 12px rgba(0, 59, 112, 0.08) !important;
+}
+
+/* Tarjetas de acordeón por año */
+.objective-card-wrapper {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.2s ease !important;
+}
+
+.objective-card-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 14px 18px !important;
+  background: #FFFFFF !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.objective-title-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.objective-badge {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  flex-shrink: 0 !important;
+  text-transform: uppercase !important;
+}
+
+.objective-text {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #1E293B !important;
+  line-height: 1.4 !important;
+}
+
+.arrow-btn {
+  width: 28px !important;
+  height: 28px !important;
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  transition: transform 0.3s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.objective-content-box {
+  display: none !important;
+  padding: 14px 18px !important;
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+}
+
+.objective-content-box.show {
+  display: block !important;
+}
+
+.add-doc-btn {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 8px 14px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: background 0.2s ease !important;
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+.add-doc-btn:hover {
+  background: #0284C7 !important;
+}
+
+.years-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.doc-item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: #1E293B !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.doc-item-link:hover {
+  background: #F1F5F9 !important;
+  border-color: #003B70 !important;
+  transform: translateX(3px) !important;
+}
+
+/* Tipografía general */
+.plan-badge {
+  background: #E2E8F0 !important;
+  color: #003B70 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.page-main-title {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+  margin: 10px 0 8px 0 !important;
+}
+
+.page-main-desc {
+  font-size: 14px !important;
+  color: #475569 !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+/* Barra superior de navegación */
+.nav-subpages-card {
+  background: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 12px !important;
+  padding: 20px 24px !important;
+  display: flex !important;
+  gap: 24px !important;
+  align-items: center !important;
+  margin-bottom: 30px !important;
+}
+
+.nav-subpages-sidebar {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  min-width: 170px !important;
+}
+
+.nav-tag {
+  background: #E2E8F0 !important;
+  color: #003B70 !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
+  width: fit-content !important;
+  letter-spacing: 0.5px !important;
+}
+
+.nav-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+}
+
+.nav-buttons-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  flex: 1 !important;
+}
+
+.nav-subpage-btn {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-left: 4px solid #003B70 !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  color: #1E293B !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.nav-subpage-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0px 4px 10px rgba(0, 59, 112, 0.1) !important;
+}
+
+.nav-btn-content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.nav-icon {
+  color: #003B70 !important;
+  font-size: 13px !important;
+}
+
+.nav-arrow {
+  color: #94A3B8 !important;
+  font-size: 11px !important;
+}

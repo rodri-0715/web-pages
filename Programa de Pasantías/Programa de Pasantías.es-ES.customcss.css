@@ -1,0 +1,93 @@
+
+.objective-card-wrapper {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.objective-card-wrapper:hover {
+  border-color: #003B70 !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0px 4px 12px rgba(0, 59, 112, 0.08) !important;
+}
+
+.objective-card-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 16px 20px !important;
+  background: #FFFFFF !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.objective-title-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.objective-badge {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  flex-shrink: 0 !important;
+}
+
+.objective-text {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #1E293B !important;
+  line-height: 1.4 !important;
+}
+
+.arrow-btn {
+  width: 30px !important;
+  height: 30px !important;
+  background: #F1F5F9 !important;
+  color: #003B70 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  transition: all 0.2s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.objective-card-wrapper:hover .arrow-btn {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+}
+
+.plan-badge {
+  background: #E2E8F0 !important;
+  color: #003B70 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.page-main-title {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+  margin: 10px 0 8px 0 !important;
+  text-shadow: none !important;
+}
+
+.page-main-desc {
+  font-size: 14px !important;
+  color: #475569 !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  max-width: 800px !important;
+}

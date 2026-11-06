@@ -1,0 +1,1160 @@
+/* =========================================================
+   ESTILOS EXCLUSIVOS: INVESTIGACIÓN EICS
+   ========================================================= */
+
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 10px 15px !important;
+}
+
+.objective-badge {
+    background-color: #E8F0FE !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+}
+
+.objective-title {
+    color: #003B70 !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+}
+
+.summary-box {
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    padding: 16px 20px !important;
+    margin: 15px 0 25px 0 !important;
+}
+
+.meta-summary-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+.meta-summary-list li {
+    font-size: 14px !important;
+    color: #334155 !important;
+    line-height: 1.4 !important;
+}
+
+.meta-summary-list strong {
+    color: #003B70 !important;
+}
+
+/* Tarjetas de Meta */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 5px solid #003B70 !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.meta-tag {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.meta-description {
+    font-size: 15.5px !important;
+    color: #2D3748 !important;
+    margin: 8px 0 12px 0 !important;
+}
+
+.meta-reference {
+    font-size: 13px !important;
+    color: #64748B !important;
+    background: #F8FAFC !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    display: inline-block !important;
+    margin-bottom: 20px !important;
+}
+
+/* 1. Cápsulas Interactivas Meta 3.1.1 */
+.projects-interactive-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    margin-top: 10px !important;
+}
+
+.project-card-pill {
+    border-radius: 35px !important;
+    padding: 6px 10px 6px 6px !important;
+    color: #FFFFFF !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.pill-blue { background: linear-gradient(90deg, #003B70 0%, #1D4ED8 100%) !important; }
+.pill-cyan { background: linear-gradient(90deg, #1D4ED8 0%, #0284C7 100%) !important; }
+.pill-teal { background: linear-gradient(90deg, #0369A1 0%, #0369A1 100%) !important; }
+
+.project-pill-main {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.project-number {
+    width: 46px !important;
+    height: 46px !important;
+    background-color: #FFFFFF !important;
+    color: #1E293B !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    flex-shrink: 0 !important;
+}
+
+.project-title-text {
+    flex: 1 !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    color: #FFFFFF !important;
+}
+
+.project-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+
+.btn-action-icon {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #003B70 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+}
+
+.project-expandable-panel {
+    display: none !important;
+    padding: 12px 16px 8px 50px !important;
+}
+
+.project-expandable-panel.active {
+    display: block !important;
+}
+
+.panel-content-box {
+    background: #FFFFFF !important;
+    color: #1E293B !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel-content-box.team-box {
+    background: #DCFCE7 !important;
+}
+
+.project-details-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.project-details-table th {
+    width: 110px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+    vertical-align: top !important;
+    padding: 6px 10px 6px 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.project-details-table td {
+    font-size: 13px !important;
+    color: #334155 !important;
+    padding: 6px 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* 2. Grilla Docente Meta 3.1.2 */
+.docent-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 16px !important;
+    margin-top: 15px !important;
+}
+
+.docent-card {
+    border-radius: 12px !important;
+    padding: 18px !important;
+    color: #FFFFFF !important;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.docent-blue { background-color: #13bc5c88 !important; }
+.docent-teal { background-color: #c97f187d !important; }
+.docent-cyan { background-color: #42A5F5 !important; }
+.docent-darkblue { background-color: #a3c70276 !important; }
+
+.docent-header {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.docent-desc {
+    font-size: 13px !important;
+    margin: 0 !important;
+    opacity: 0.95 !important;
+}
+
+/* 3. Cards de Alianzas Meta 3.1.3 */
+.alliances-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+    gap: 16px !important;
+    margin-top: 15px !important;
+}
+
+.alliance-card {
+    background: #FFFFFF !important;
+    border: 2px solid #38BDF8 !important;
+    border-radius: 12px !important;
+    padding: 20px 16px !important;
+    position: relative !important;
+}
+
+.alliance-badge {
+    position: absolute !important;
+    top: -16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 32px !important;
+    height: 32px !important;
+    background-color: #0284C7 !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+}
+
+.alliance-title {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+    text-align: center !important;
+    margin: 10px 0 12px 0 !important;
+}
+
+.alliance-list {
+    margin: 0 !important;
+    padding-left: 18px !important;
+    font-size: 12.5px !important;
+    color: #475569 !important;
+    line-height: 1.45 !important;
+}
+
+/* 4. Sección de Evidencias */
+.section-sub-title {
+    color: #003B70 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+}
+
+.media-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.media-card {
+    background: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.media-card-header {
+    background: #F8FAFC !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    padding: 12px 16px !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+    color: #003B70 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.media-card-body {
+    padding: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.media-img {
+    width: 100% !important;
+    max-height: 250px !important;
+    border-radius: 6px !important;
+    object-fit: contain !important;
+}
+
+.media-caption {
+    font-size: 12.5px !important;
+    color: #64748B !important;
+    text-align: center !important;
+    margin-top: 12px !important;
+}
+
+.upload-placeholder-box {
+    width: 100% !important;
+    min-height: 180px !important;
+    border: 2px dashed #CBD5E1 !important;
+    border-radius: 8px !important;
+    background: #F8FAFC !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+}
+
+.upload-icon {
+    font-size: 32px !important;
+    color: #003B70 !important;
+    margin-bottom: 8px !important;
+}
+
+.upload-text {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+}
+
+.btn-upload {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    margin-top: 10px !important;
+}
+
+.btn-delete-card * { pointer-events: none !important; }
+
+.btn-delete-card {
+    background: transparent !important;
+    border: none !important;
+    color: #EF4444 !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    padding: 6px 10px !important;
+}
+
+
+/* =========================================================
+   ESTILOS: CUADRÍCULA INTERACTIVA CON TOOLTIPS (META 3.1.2)
+   ========================================================= */
+
+.docent-grid-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+}
+
+.docent-block {
+    position: relative !important;
+    border-radius: 10px !important;
+    padding: 24px 20px !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.docent-block:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Colores de Degradado Institucionales */
+.block-blue     { background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%) !important; }
+.block-teal     { background: linear-gradient(135deg, #0284C7 0%, #06B6D4 100%) !important; }
+.block-sky      { background: linear-gradient(135deg, #0369A1 0%, #38BDF8 100%) !important; }
+.block-darkblue { background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%) !important; }
+
+/* Botón de Mano Interactiva */
+.btn-hand-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    transition: all 0.2s ease !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+.btn-hand-icon:hover {
+    background: #FFFFFF !important;
+    color: #003B70 !important;
+    transform: scale(1.1) !important;
+}
+
+.docent-block-info h3 {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 4px 0 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+.docent-block-info p {
+    font-size: 13px !important;
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    line-height: 1.3 !important;
+}
+
+/* Globo Flotante (Tooltip / Popover) */
+.docent-tooltip {
+    display: none !important;
+    position: absolute !important;
+    top: -55px !important;
+    left: 15px !important;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important;
+    z-index: 100 !important;
+    white-space: nowrap !important;
+    border: 1px solid #E2E8F0 !important;
+    animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+/* Flecha del Globo */
+.docent-tooltip::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -8px !important;
+    left: 20px !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid #FFFFFF !important;
+}
+
+.docent-tooltip.active {
+    display: block !important;
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: translateY(6px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Estructura principal interna de la tarjeta */
+.docent-block {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    position: relative !important;
+}
+
+.docent-block-main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 15px !important;
+}
+
+.docent-actions {
+    display: flex !important;
+    gap: 8px !important;
+}
+
+/* Panel Desplegable de Descripción */
+.docent-expandable-desc {
+    display: none !important;
+    margin-top: 14px !important;
+    padding-top: 10px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+    animation: fadeInDesc 0.25s ease-in-out !important;
+}
+
+.docent-expandable-desc.active {
+    display: block !important;
+}
+
+.docent-desc-box {
+    background: #FFFFFF !important;
+    color: #1E293B !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    box-shadow: 0px 4px 10px rgba(21, 21, 21, 0.1) !important;
+}
+
+@keyframes fadeInDesc {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================================
+   ESTILOS: ALIANZAS EXTERNAS (META 3.1.3)
+   ========================================================= */
+
+.alliances-grid-modern {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+    gap: 24px !important;
+    margin-top: 25px !important;
+}
+
+.alliance-box {
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    padding: 24px 18px 18px 18px !important;
+    position: relative !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-top: 4px solid #CBD5E1 !important;
+}
+
+/* Colores de Borde Superior */
+.border-blue     { border-top-color: #1D4ED8 !important; border-left: 1px solid #E2E8F0 !important; border-right: 1px solid #E2E8F0 !important; border-bottom: 1px solid #E2E8F0 !important; }
+.border-teal     { border-top-color: #0D9488 !important; border-left: 1px solid #E2E8F0 !important; border-right: 1px solid #E2E8F0 !important; border-bottom: 1px solid #E2E8F0 !important; }
+.border-cyan     { border-top-color: #0284C7 !important; border-left: 1px solid #E2E8F0 !important; border-right: 1px solid #E2E8F0 !important; border-bottom: 1px solid #E2E8F0 !important; }
+.border-darkblue { border-top-color: #0F172A !important; border-left: 1px solid #E2E8F0 !important; border-right: 1px solid #E2E8F0 !important; border-bottom: 1px solid #E2E8F0 !important; }
+
+/* Círculo Numérico Superior */
+.alliance-number-badge {
+    position: absolute !important;
+    top: -16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 34px !important;
+    height: 34px !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-blue     { background-color: #1D4ED8 !important; }
+.bg-teal     { background-color: #0D9488 !important; }
+.bg-cyan     { background-color: #0284C7 !important; }
+.bg-darkblue { background-color: #0F172A !important; }
+
+.alliance-name {
+    font-size: 15.5px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+    text-align: center !important;
+    margin: 10px 0 14px 0 !important;
+    line-height: 1.3 !important;
+}
+
+.alliance-items-list {
+    margin: 0 0 15px 0 !important;
+    padding-left: 18px !important;
+    font-size: 12.5px !important;
+    color: #475569 !important;
+    line-height: 1.45 !important;
+    flex: 1 !important;
+}
+
+.alliance-items-list li {
+    margin-bottom: 6px !important;
+}
+
+/* Botón Desplegable de Articulación */
+.btn-alliance-toggle {
+    background: #F8FAFC !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 6px 10px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    transition: background 0.2s ease !important;
+}
+
+.btn-alliance-toggle:hover {
+    background: #E2E8F0 !important;
+}
+
+.alliance-expandable-text {
+    display: none !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    background: #F1F5F9 !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    color: #334155 !important;
+    line-height: 1.4 !important;
+}
+
+.alliance-expandable-text.active {
+    display: block !important;
+}
+
+
+/* =========================================================
+   ESTILOS EXCLUSIVOS: INVESTIGACIÓN EICS & SELECTOR DE AÑOS
+   ========================================================= */
+
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 10px 15px !important;
+}
+
+.objective-badge {
+    background-color: #E8F0FE !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+}
+
+.objective-title {
+    color: #003B70 !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+}
+
+.summary-box {
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    padding: 16px 20px !important;
+    margin: 15px 0 25px 0 !important;
+}
+
+.meta-summary-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+.meta-summary-list li {
+    font-size: 14px !important;
+    color: #334155 !important;
+    line-height: 1.4 !important;
+}
+
+.meta-summary-list strong {
+    color: #003B70 !important;
+}
+
+/* =========================================================
+   ESTILOS DEL SELECTOR DE AÑOS (CORREGIDOS Y ESTILIZADOS)
+   ========================================================= */
+.years-container-box {
+    background-color: #F0F4F8 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    margin-bottom: 25px !important;
+    border: 1px solid #D9E2EC !important;
+}
+
+.years-tabs {
+    display: flex !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+}
+
+.year-btn {
+    background-color: #FFFFFF !important;
+    color: #003B70 !important;
+    border: 1px solid #CBD5E1 !important;
+    padding: 8px 18px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.year-btn:hover {
+    background-color: #E2E8F0 !important;
+    border-color: #003B70 !important;
+}
+
+.year-btn.active {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    border-color: #003B70 !important;
+    box-shadow: 0px 4px 8px rgba(0, 59, 112, 0.2) !important;
+}
+
+.year-content {
+    display: none !important;
+}
+
+.year-content.active {
+    display: block !important;
+}
+
+/* Tarjetas de Meta */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 5px solid #003B70 !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.meta-tag {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.meta-description {
+    font-size: 15.5px !important;
+    color: #2D3748 !important;
+    margin: 8px 0 12px 0 !important;
+}
+
+/* 1. Cápsulas Interactivas Meta 3.1.1 */
+.projects-interactive-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    margin-top: 10px !important;
+}
+
+.project-card-pill {
+    border-radius: 35px !important;
+    padding: 6px 10px 6px 6px !important;
+    color: #FFFFFF !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.pill-blue { background: linear-gradient(90deg, #003B70 0%, #1D4ED8 100%) !important; }
+.pill-cyan { background: linear-gradient(90deg, #1D4ED8 0%, #0284C7 100%) !important; }
+.pill-teal { background: linear-gradient(90deg, #0369A1 0%, #0369A1 100%) !important; }
+
+.project-pill-main {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.project-number {
+    width: 46px !important;
+    height: 46px !important;
+    background-color: #FFFFFF !important;
+    color: #1E293B !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    flex-shrink: 0 !important;
+}
+
+.project-title-text {
+    flex: 1 !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    color: #FFFFFF !important;
+}
+
+.project-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+
+.btn-action-icon {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #003B70 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+}
+
+.project-expandable-panel {
+    display: none !important;
+    padding: 12px 16px 8px 50px !important;
+}
+
+.project-expandable-panel.active {
+    display: block !important;
+}
+
+.panel-content-box {
+    background: #FFFFFF !important;
+    color: #1E293B !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel-content-box.team-box {
+    background: #DCFCE7 !important;
+}
+
+.project-details-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.project-details-table th {
+    width: 110px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+    vertical-align: top !important;
+    padding: 6px 10px 6px 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.project-details-table td {
+    font-size: 13px !important;
+    color: #334155 !important;
+    padding: 6px 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* 2. Grilla Docente Meta 3.1.2 */
+.docent-grid-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+}
+
+.docent-block {
+    position: relative !important;
+    border-radius: 10px !important;
+    padding: 24px 20px !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.block-blue     { background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%) !important; }
+.block-teal     { background: linear-gradient(135deg, #0284C7 0%, #06B6D4 100%) !important; }
+.block-sky      { background: linear-gradient(135deg, #0369A1 0%, #38BDF8 100%) !important; }
+.block-darkblue { background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%) !important; }
+
+.docent-block-main {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 15px !important;
+}
+
+.docent-actions {
+    display: flex !important;
+    gap: 8px !important;
+}
+
+.btn-hand-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+}
+
+.docent-block-info h3 {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 4px 0 !important;
+    text-transform: uppercase !important;
+}
+
+.docent-block-info p {
+    font-size: 13px !important;
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.docent-tooltip {
+    display: none !important;
+    position: absolute !important;
+    top: -55px !important;
+    left: 15px !important;
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2) !important;
+    z-index: 100 !important;
+    white-space: nowrap !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+.docent-tooltip.active {
+    display: block !important;
+}
+
+.docent-expandable-desc {
+    display: none !important;
+    margin-top: 14px !important;
+    padding-top: 10px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.docent-expandable-desc.active {
+    display: block !important;
+}
+
+.docent-desc-box {
+    background: #FFFFFF !important;
+    color: #1E293B !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+}
+
+/* 3. Cards de Alianzas Meta 3.1.3 */
+.alliances-grid-modern {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+    gap: 24px !important;
+    margin-top: 25px !important;
+}
+
+.alliance-box {
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    padding: 24px 18px 18px 18px !important;
+    position: relative !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-top: 4px solid #CBD5E1 !important;
+}
+
+.border-blue     { border-top-color: #1D4ED8 !important; border: 1px solid #E2E8F0 !important; border-top-width: 4px !important; }
+.border-teal     { border-top-color: #0D9488 !important; border: 1px solid #E2E8F0 !important; border-top-width: 4px !important; }
+.border-cyan     { border-top-color: #0284C7 !important; border: 1px solid #E2E8F0 !important; border-top-width: 4px !important; }
+.border-darkblue { border-top-color: #0F172A !important; border: 1px solid #E2E8F0 !important; border-top-width: 4px !important; }
+
+.alliance-number-badge {
+    position: absolute !important;
+    top: -16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 34px !important;
+    height: 34px !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+}
+
+.bg-blue     { background-color: #1D4ED8 !important; }
+.bg-teal     { background-color: #0D9488 !important; }
+.bg-cyan     { background-color: #0284C7 !important; }
+.bg-darkblue { background-color: #0F172A !important; }
+
+.alliance-name {
+    font-size: 15.5px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+    text-align: center !important;
+    margin: 10px 0 14px 0 !important;
+}
+
+.alliance-items-list {
+    margin: 0 0 15px 0 !important;
+    padding-left: 18px !important;
+    font-size: 12.5px !important;
+    color: #475569 !important;
+    flex: 1 !important;
+}
+
+.btn-alliance-toggle {
+    background: #F8FAFC !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 6px 10px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+}
+
+.alliance-expandable-text {
+    display: none !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    background: #F1F5F9 !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    color: #334155 !important;
+}
+
+.alliance-expandable-text.active {
+    display: block !important;
+}
+/* Estilos de la barra compacta centrada */
+.sub-navbar {
+    background-color: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.sub-navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* <-- ESTO CENTRA TODO EL CONTENIDO HORIZONTALMENTE */
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub-nav-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #003B70;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.sub-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center; /* <-- Asegura que los botones internos también se centren si se pasan de línea */
+}
+
+.sub-nav-item {
+    color: #334155;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+}
+
+.sub-nav-item:hover {
+    background-color: #E2E8F0;
+    color: #003B70;
+    border-color: #94A3B8;
+}
+
+.sub-nav-item.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+}

@@ -1,0 +1,516 @@
+/* ==========================================================================
+   ESTILOS ACORDEÓN AÑOS (ESTILO PLAN ESTRATÉGICO)
+   ========================================================================== */
+
+/* 1. Tarjeta Principal Destacada (Arriba) */
+.main-doc-card {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-left: 5px solid #003B70 !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.02) !important;
+}
+
+.main-doc-info {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+
+.doc-icon-box {
+  width: 42px !important;
+  height: 42px !important;
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+}
+
+.main-doc-title {
+  margin: 0 !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+}
+
+.main-doc-desc {
+  margin: 2px 0 0 0 !important;
+  font-size: 12.5px !important;
+  color: #64748B !important;
+}
+
+.btn-view-doc {
+  background: transparent !important;
+  border: none !important;
+  color: #003B70 !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+  padding: 8px !important;
+  border-radius: 50% !important;
+  transition: background 0.2s ease !important;
+}
+
+.btn-view-doc:hover {
+  background: #E8F0FE !important;
+}
+
+/* 2. Contenedor de Acordeones */
+.years-accordion-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.year-accordion-item {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.02) !important;
+  transition: all 0.25s ease !important;
+}
+
+.year-accordion-item.active {
+  border-color: #003B70 !important;
+  box-shadow: 0px 4px 12px rgba(0, 59, 112, 0.08) !important;
+}
+
+/* Encabezado Fijo del Acordeón */
+.year-accordion-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 14px 20px !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  background: #FFFFFF !important;
+  transition: background 0.2s ease !important;
+}
+
+.year-accordion-header:hover {
+  background: #F8FAFC !important;
+}
+
+.year-header-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.year-badge {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  padding: 5px 12px !important;
+  border-radius: 6px !important;
+}
+
+.year-title {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+}
+
+.year-header-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* Botón de Agregar Nuevo Registro */
+.btn-add-record {
+  background-color: #E8F0FE !important;
+  color: #003B70 !important;
+  border: 1px solid #BCCCDC !important;
+  padding: 6px 14px !important;
+  border-radius: 6px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-add-record:hover {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+  border-color: #003B70 !important;
+}
+
+/* Botón Circular con Flecha Desplegable */
+.circle-arrow-btn {
+  width: 34px !important;
+  height: 34px !important;
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.year-accordion-item.active .circle-arrow-btn {
+  transform: rotate(180deg) !important; /* Gira la flecha hacia arriba al abrir */
+}
+
+/* Panel Desplegable (Oculto por defecto) */
+.year-accordion-content {
+  display: none;
+  padding: 16px 20px !important;
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+}
+
+.year-accordion-item.active .year-accordion-content {
+  display: block !important;
+}
+
+/* Estilos de Tabla e Botones internos */
+.table-responsive-container {
+  width: 100% !important;
+  overflow-x: auto !important;
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+  border: 1px solid #E2E8F0 !important;
+}
+
+.custom-data-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 13.5px !important;
+}
+
+.custom-data-table th {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  padding: 12px 16px !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+}
+
+.custom-data-table td {
+  padding: 12px 16px !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.action-btn-doc {
+  background-color: #E8F0FE !important;
+  color: #003B70 !important;
+  border: 1px solid #BCCCDC !important;
+  padding: 5px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.action-btn-doc:hover {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+}
+
+
+/* ========================================================== */
+/* ESTILOS DE DISEÑO DUAL Y RESPONSIVE                        */
+/* ========================================================== */
+
+/* Adaptación responsive para pantallas pequeñas (móviles y tablets) */
+@media (max-width: 900px) {
+  .layout-dual-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .viewer-container-box {
+    position: static !important;
+  }
+}
+
+/* Tarjetas de acordeón de años */
+.year-accordion-item {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.02) !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.year-accordion-item.active {
+  border-color: #003B70 !important;
+  box-shadow: 0px 4px 10px rgba(0,59,112,0.06) !important;
+}
+
+.year-accordion-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 12px 18px !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  background: #FFFFFF !important;
+}
+
+.year-accordion-header:hover {
+  background: #F8FAFC !important;
+}
+
+.year-header-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.year-badge {
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+}
+
+.year-title {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #003B70 !important;
+}
+
+.year-header-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* Botón de Agregar */
+.btn-add-record {
+  background-color: #E8F0FE !important;
+  color: #003B70 !important;
+  border: 1px solid #BCCCDC !important;
+  padding: 5px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+
+.btn-add-record:hover {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+}
+
+/* Flecha circular */
+.circle-arrow-btn {
+  width: 30px !important;
+  height: 30px !important;
+  background: #003B70 !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.year-accordion-item.active .circle-arrow-btn {
+  transform: rotate(180deg) !important;
+}
+
+.year-accordion-content {
+  display: none;
+  padding: 12px 18px !important;
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+}
+
+/* Enlaces internos de los documentos */
+.doc-links-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.doc-item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+  text-decoration: none !important;
+  color: #1E293B !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.doc-item-link:hover {
+  background: #F1F5F9 !important;
+  border-color: #003B70 !important;
+  transform: translateX(3px) !important;
+}
+
+/* Botón de Agregar Interno (Ancho completo dentro del acordeón) */
+.btn-internal-add {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  width: 100% !important;
+  padding: 10px 16px !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+  transition: background 0.2s ease !important;
+  box-shadow: 0px 2px 4px rgba(0, 59, 112, 0.15) !important;
+}
+
+.btn-internal-add:hover {
+  background-color: #002D57 !important;
+}
+
+/* Estilos para las tarjetas de Semestre internas */
+.semesters-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-top: 5px !important;
+}
+
+.semester-card {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.semester-card:hover {
+  border-color: #003B70 !important;
+}
+
+.semester-card-header {
+  padding: 12px 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #003B70 !important;
+  background: #FFFFFF !important;
+}
+
+.semester-arrow {
+  font-size: 11px !important;
+  color: #94A3B8 !important;
+  transition: transform 0.3s ease !important;
+}
+
+.semester-card.active .semester-arrow {
+  transform: rotate(180deg) !important;
+}
+
+.semester-card-body {
+  display: none;
+  padding: 14px 16px !important;
+  background: #F8FAFC !important;
+  border-top: 1px solid #E2E8F0 !important;
+}
+
+/* Botón interno de agregar por semestre */
+.btn-internal-add {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  width: 100% !important;
+  padding: 9px 14px !important;
+  border-radius: 6px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  margin-bottom: 10px !important;
+  transition: background 0.2s ease !important;
+}
+
+.btn-internal-add:hover {
+  background-color: #002D57 !important;
+}
+/* Estilos para la lista interna de profesores */
+.professors-list-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  padding-right: 4px !important;
+}
+
+.professor-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  text-decoration: none !important;
+  color: #1E293B !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.professor-item:hover {
+  background: #F1F5F9 !important;
+  border-color: #003B70 !important;
+}
+
+.btn-prof-add {
+  background-color: #003B70 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  transition: background 0.2s ease !important;
+}
+
+.btn-prof-add:hover {
+  background-color: #002D57 !important;
+}

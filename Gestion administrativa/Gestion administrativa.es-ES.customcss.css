@@ -1,0 +1,170 @@
+/* =========================================================
+   ESTILOS INSTITUCIONALES EICS (GESTIÓN ADMINISTRATIVA / META 5.6)
+   ========================================================= */
+
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 10px 15px !important;
+}
+
+.objective-header {
+    margin-bottom: 20px !important;
+}
+
+.objective-badge {
+    background-color: #E8F0FE !important;
+    color: #003B70 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+}
+
+.objective-title {
+    color: #003B70 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+    line-height: 1.3 !important;
+}
+
+/* Tarjeta de Meta */
+.meta-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 5px solid #003B70 !important;
+    border-radius: 10px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.meta-tag {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.meta-description {
+    font-size: 15.5px !important;
+    color: #2D3748 !important;
+    margin: 8px 0 12px 0 !important;
+    line-height: 1.5 !important;
+}
+
+.meta-reference {
+    font-size: 13px !important;
+    color: #64748B !important;
+    background: #F8FAFC !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    display: inline-block !important;
+}
+
+/* Tarjeta de Acciones */
+.action-card {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.action-header {
+    border-bottom: 2px solid #F1F5F9;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.area-subtitle {
+    color: #003B70;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Lista de Acciones */
+.custom-action-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #2D3748;
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+.custom-action-list li {
+    margin-bottom: 12px;
+}
+
+.custom-action-list li::marker {
+    color: #003B70;
+}
+
+.table-link {
+    color: #003B70;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.table-link:hover {
+    color: #002D57;
+}
+/* =========================================================
+   ESTILOS PARA EL CONTENEDOR Y BOTONES DE AÑOS
+   ========================================================= */
+
+/* Caja contenedora general de los años */
+.years-container-box {
+    background-color: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    padding: 14px 18px !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.01);
+}
+
+/* Alineación de los botones */
+.years-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Estilo base de cada botón de año */
+.year-btn {
+    background-color: #FFFFFF !important;
+    color: #003B70 !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+    padding: 8px 18px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* Efecto al pasar el cursor por encima (hover) */
+.year-btn:hover {
+    background-color: #F1F5F9 !important;
+    border-color: #003B70 !important;
+}
+
+/* Estilo para el botón activo (año seleccionado) */
+.year-btn.active {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    border-color: #003B70 !important;
+    box-shadow: 0px 2px 6px rgba(0, 59, 112, 0.25) !important;
+}
+
+/* Oculta todos los años por defecto */
+.year-content {
+    display: none !important;
+}
+
+/* Muestra únicamente el año que tenga la clase active */
+.year-content.active {
+    display: block !important;
+}

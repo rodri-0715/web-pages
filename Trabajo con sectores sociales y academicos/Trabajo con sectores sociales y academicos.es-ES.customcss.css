@@ -1,0 +1,265 @@
+/* =========================================================
+   ESTILOS COMPLETOS: OBJETIVO 4.3 - SECTORES SOCIOPRODUCTIVOS
+   ========================================================= */
+
+/* Contenedor Principal */
+.objective-container {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+}
+
+/* Encabezado y Resumen del Objetivo */
+.objective-header {
+    margin-bottom: 25px !important;
+}
+
+.objective-badge {
+    background: #003B70 !important;
+    color: #FFFFFF !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.objective-title {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #003B70 !important;
+    margin-top: 8px !important;
+    line-height: 1.3 !important;
+}
+
+.summary-box {
+    margin-top: 15px !important;
+    background: #F8FAFC !important;
+    padding: 15px 20px !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #003B70 !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.summary-box ul {
+    margin: 0 !important;
+    padding-left: 20px !important;
+    color: #334155 !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+}
+
+/* Tarjeta de Meta Individual */
+.meta-card {
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04) !important;
+    margin-bottom: 24px !important;
+    overflow: hidden !important;
+    transition: box-shadow 0.2s ease !important;
+}
+
+.meta-card:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.meta-card-header {
+    background: #F8FAFC !important;
+    padding: 12px 20px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.meta-tag {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 10px !important;
+    border-radius: 6px !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+.meta-card-body {
+    padding: 20px !important;
+}
+
+.meta-description {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1E293B !important;
+    margin: 0 0 10px 0 !important;
+    line-height: 1.4 !important;
+}
+
+/* Cajas de Alerta de Estado del Periodo */
+.status-alert-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    padding: 16px 20px !important;
+    margin-top: 15px !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.alert-blue {
+    border-left: 5px solid #1D4ED8 !important;
+}
+
+.alert-teal {
+    border-left: 5px solid #0D9488 !important;
+}
+
+.alert-icon-wrap {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    flex-shrink: 0 !important;
+}
+
+.alert-blue .alert-icon-wrap {
+    background: #DBEAFE !important;
+    color: #1D4ED8 !important;
+}
+
+.alert-teal .alert-icon-wrap {
+    background: #CCFBF1 !important;
+    color: #0D9488 !important;
+}
+
+.alert-content h4 {
+    margin: 0 0 2px 0 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #003B70 !important;
+}
+
+.alert-content p {
+    margin: 0 !important;
+    font-size: 13.5px !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+/* Estilos del selector de años institucional */
+.years-container-box {
+    background-color: #F0F4F8 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    margin-bottom: 25px !important;
+    border: 1px solid #D9E2EC !important;
+}
+
+.years-tabs {
+    display: flex !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+}
+
+.year-btn {
+    background-color: #FFFFFF !important;
+    color: #003B70 !important;
+    border: 1px solid #CBD5E1 !important;
+    padding: 8px 18px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.year-btn:hover {
+    background-color: #E2E8F0 !important;
+    border-color: #003B70 !important;
+}
+
+.year-btn.active {
+    background-color: #003B70 !important;
+    color: #FFFFFF !important;
+    border-color: #003B70 !important;
+    box-shadow: 0px 4px 8px rgba(0, 59, 112, 0.2) !important;
+}
+
+/* Control de visibilidad de los años */
+.year-content {
+    display: none !important;
+}
+
+.year-content.active {
+    display: block !important;
+}
+
+/* Estilos de la barra compacta centrada */
+.sub-navbar {
+    background-color: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.sub-navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* <-- ESTO CENTRA TODO EL CONTENIDO HORIZONTALMENTE */
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub-nav-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #003B70;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.sub-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center; /* <-- Asegura que los botones internos también se centren si se pasan de línea */
+}
+
+.sub-nav-item {
+    color: #334155;
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+}
+
+.sub-nav-item:hover {
+    background-color: #E2E8F0;
+    color: #003B70;
+    border-color: #94A3B8;
+}
+
+.sub-nav-item.active {
+    background-color: #003B70;
+    color: #FFFFFF;
+    border-color: #003B70;
+}

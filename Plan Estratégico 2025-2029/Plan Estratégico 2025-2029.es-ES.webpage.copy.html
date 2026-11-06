@@ -1,0 +1,109 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;">
+      <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 30px; align-items: start;">
+        <!-- COLUMNA IZQUIERDA: INFORME GENERAL + ACORDEÓN DE AÑOS (2025 - 2029) -->
+        <div>
+          <div style="margin-bottom: 20px;">
+            <span class="plan-badge">DIRECCIÓN Y RUMBO</span>
+            <h1 class="page-main-title">Plan Estratégico</h1>
+            <p class="page-main-desc">Consulte el informe general y los documentos de seguimiento organizados por periodos anuales.</p>
+          </div>
+          <!-- BOTÓN PARA MOSTRAR Y CARGAR EL INFORME GENERAL -->
+          <div style="margin-bottom: 20px;">
+            <div onclick="loadSecureViewer('https://drive.google.com/file/d/1lsNAw8d444EAwamWPfcL-p-BC4b-YppK/view?usp=drive_link', 'Informe General del Plan Estratégico')" class="general-report-banner">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 40px; height: 40px; background: #003B70; color: #FFFFFF; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px;"><i class="fa fa-file-text"></i></div>
+                <div>
+                  <h4 style="margin: 0; font-size: 14px; color: #003B70; font-weight: 800;">Plan Estratégico 2025-2029</h4>
+                  <p style="margin: 2px 0 0 0; font-size: 12px; color: #64748B;">Documento principal del plan</p>
+                </div>
+              </div>
+              <i class="fa fa-eye" style="color: #003B70; font-size: 14px;"></i>
+            </div>
+          </div>
+          <!-- ACORDEÓN DE AÑOS (2025 - 2029) -->
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- AÑO 2025 (SIN BOTÓN DE AGREGAR) -->
+            <div class="objective-card-wrapper">
+              <div onclick="toggleStrategicAccordion('content-2025', 'icon-2025')" class="objective-card-header">
+                <div class="objective-title-group"><span class="objective-badge">2025</span><span class="objective-text">PED 2025</span></div>
+                <div id="icon-2025" class="arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div id="content-2025" class="objective-content-box">
+                <!-- Lista directa de documentos 2025 sin botón superior -->
+                <div id="list-2025" class="years-list">
+                  <div onclick="loadSecureViewer('https://drive.google.com/file/d/10r1DQe9n_2mFwLymb5odI6ZyPqyp2qvj/view?usp=drive_link', 'Informe Anual de Metas 2025')" class="doc-item-link">
+                    <div style="display: flex; align-items: center; gap: 10px;"><i class="fa fa-file-pdf-o" style="color: #E11D48; font-size: 16px;"></i><span>Informe Anual de Metas 2025</span></div>
+                    <i class="fa fa-eye" style="color: #64748B; font-size: 12px;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- AÑO 2026 -->
+            <div class="objective-card-wrapper">
+              <div onclick="toggleStrategicAccordion('content-2026', 'icon-2026')" class="objective-card-header">
+                <div class="objective-title-group"><span class="objective-badge">2026</span><span class="objective-text">PED 2026</span></div>
+                <div id="icon-2026" class="arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div id="content-2026" class="objective-content-box">
+                <button onclick="promptAddStrategicDoc('2026', event)" class="add-doc-btn"><i class="fa fa-plus-circle"></i> Agregar documento (2026)</button>
+                <div id="list-2026" class="years-list" style="margin-top: 10px;"></div>
+              </div>
+            </div>
+            <!-- AÑO 2027 -->
+            <div class="objective-card-wrapper">
+              <div onclick="toggleStrategicAccordion('content-2027', 'icon-2027')" class="objective-card-header">
+                <div class="objective-title-group"><span class="objective-badge">2027</span><span class="objective-text">PED 2027</span></div>
+                <div id="icon-2027" class="arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div id="content-2027" class="objective-content-box">
+                <button onclick="promptAddStrategicDoc('2027', event)" class="add-doc-btn"><i class="fa fa-plus-circle"></i> Agregar documento (2027)</button>
+                <div id="list-2027" class="years-list" style="margin-top: 10px;"></div>
+              </div>
+            </div>
+            <!-- AÑO 2028 -->
+            <div class="objective-card-wrapper">
+              <div onclick="toggleStrategicAccordion('content-2028', 'icon-2028')" class="objective-card-header">
+                <div class="objective-title-group"><span class="objective-badge">2028</span><span class="objective-text">PED 2028</span></div>
+                <div id="icon-2028" class="arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div id="content-2028" class="objective-content-box">
+                <button onclick="promptAddStrategicDoc('2028', event)" class="add-doc-btn"><i class="fa fa-plus-circle"></i> Agregar documento (2028)</button>
+                <div id="list-2028" class="years-list" style="margin-top: 10px;"></div>
+              </div>
+            </div>
+            <!-- AÑO 2029 -->
+            <div class="objective-card-wrapper">
+              <div onclick="toggleStrategicAccordion('content-2029', 'icon-2029')" class="objective-card-header">
+                <div class="objective-title-group"><span class="objective-badge">2029</span><span class="objective-text">PED 2029</span></div>
+                <div id="icon-2029" class="arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div id="content-2029" class="objective-content-box">
+                <button onclick="promptAddStrategicDoc('2029', event)" class="add-doc-btn"><i class="fa fa-plus-circle"></i> Agregar documento (2029)</button>
+                <div id="list-2029" class="years-list" style="margin-top: 10px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- COLUMNA DERECHA: VISOR INSTITUCIONAL VISIBLE -->
+      <div id="viewer-wrapper-card" style="display: block; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; padding: 20px; box-shadow: 0px 4px 12px rgba(0,0,0,0.04); position: sticky; top: 20px;">
+        
+        <!-- ENCABEZADO DEL VISOR -->
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #E2E8F0; padding-bottom: 10px;">
+          <span style="font-size: 12px; font-weight: 700; color: #64748B; text-transform: uppercase;">Visor Institucional (Protegido)</span>
+          <span id="doc-title-badge" style="font-size: 12px; font-weight: 700; color: #003B70; background: #E0F2FE; padding: 3px 8px; border-radius: 4px;">Documento Seleccionado</span>
+        </div>
+
+        <!-- CONTENEDOR DEL VISOR -->
+        <div id="secure-viewer-container" oncontextmenu="return false;" style="width: 100%; height: 500px; background: #F1F5F9; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #CBD5E1;">
+          <!-- El iframe o contenido se cargará dinámicamente aquí -->
+          <p style="color: #64748B; font-size: 13px; text-align: center; padding: 20px;">Seleccione un documento del menú o cargue el contenido para visualizarlo.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CONTENEDOR PRINCIPAL INSTITUCIONAL -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;"><!-- ESTRUCTURA PRINCIPAL DE 2 COLUMNAS --></div>

@@ -1,0 +1,1155 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;">
+      
+      <!-- CONTENEDOR PRINCIPAL CENTRADO (1200px) -->
+      <div style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; width: 100%; box-sizing: border-box;">
+        
+        <!-- ENCABEZADO DE LA PÁGINA -->
+        <div style="margin-bottom: 25px;">
+          <span class="plan-badge" style="background: #E2E8F0; color: #003B70; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 4px; letter-spacing: 0.5px; text-transform: uppercase;">
+            GESTIÓN DOCENTE
+          </span>
+          <h1 class="page-main-title" style="font-size: 32px; font-weight: 800; color: #003B70; margin: 10px 0 8px 0;">
+            Informes de labores
+          </h1>
+          <p class="page-main-desc" style="font-size: 14px; color: #475569; line-height: 1.5; margin: 0;">
+            Seleccione el año (2026–2030), el semestre y al profesor correspondiente para consultar o agregar sus informes de labores oficiales.
+          </p>
+        </div>
+
+        <!-- GRID DE 2 COLUMNAS (IZQ: ACORDEONES | DER: VISOR) -->
+        <div class="layout-dual-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
+          
+          <!-- COLUMNA IZQUIERDA: ACORDEÓN DE AÑOS (2026 - 2030) -->
+          <div class="years-accordion-container" style="display: flex; flex-direction: column; gap: 12px;">
+
+            <!-- ================= AÑO 2026 ================= -->
+            <div class="year-accordion-item">
+              <div class="year-accordion-header" onclick="toggleYearAccordion(this)">
+                <div class="year-header-left">
+                  <span class="year-badge">2026</span>
+                  <span class="year-title">Informes de Labores 2026</span>
+                </div>
+                <div class="circle-arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div class="year-accordion-content">
+                <div class="semesters-stack">
+                  <!-- I Semestre 2026 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> I Semestre 2026</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <!-- Lista de los 24 Profesores -->
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2026 - I Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2026 - I Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2026 - I Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2026 - I Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2026 - I Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2026 - I Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2026 - I Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2026 - I Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2026 - I Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2026 - I Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2026 - I Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2026 - I Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2026 - I Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2026 - I Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2026 - I Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2026 - I Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2026 - I Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2026 - I Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2026 - I Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2026 - I Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2026 - I Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2026 - I Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2026 - I Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2026 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- II Semestre 2026 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> II Semestre 2026</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2026 - II Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2026 - II Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2026 - II Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2026 - II Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2026 - II Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2026 - II Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2026 - II Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2026 - II Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2026 - II Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2026 - II Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2026 - II Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2026 - II Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2026 - II Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2026 - II Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2026 - II Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2026 - II Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2026 - II Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2026 - II Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2026 - II Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2026 - II Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2026 - II Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2026 - II Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2026 - II Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2026 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= AÑO 2027 ================= -->
+            <div class="year-accordion-item">
+              <div class="year-accordion-header" onclick="toggleYearAccordion(this)">
+                <div class="year-header-left">
+                  <span class="year-badge">2027</span>
+                  <span class="year-title">Informes de Labores 2027</span>
+                </div>
+                <div class="circle-arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div class="year-accordion-content">
+                <div class="semesters-stack">
+                  <!-- I Semestre 2027 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> I Semestre 2027</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2027 - I Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2027 - I Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2027 - I Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2027 - I Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2027 - I Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2027 - I Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2027 - I Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2027 - I Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2027 - I Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2027 - I Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2027 - I Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2027 - I Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2027 - I Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2027 - I Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2027 - I Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2027 - I Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2027 - I Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2027 - I Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2027 - I Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2027 - I Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2027 - I Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2027 - I Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2027 - I Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2027 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- II Semestre 2027 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> II Semestre 2027</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2027 - II Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2027 - II Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2027 - II Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2027 - II Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2027 - II Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2027 - II Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2027 - II Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2027 - II Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2027 - II Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2027 - II Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2027 - II Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2027 - II Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2027 - II Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2027 - II Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2027 - II Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2027 - II Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2027 - II Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2027 - II Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2027 - II Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2027 - II Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2027 - II Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2027 - II Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2027 - II Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2027 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= AÑO 2028 ================= -->
+            <div class="year-accordion-item">
+              <div class="year-accordion-header" onclick="toggleYearAccordion(this)">
+                <div class="year-header-left">
+                  <span class="year-badge">2028</span>
+                  <span class="year-title">Informes de Labores 2028</span>
+                </div>
+                <div class="circle-arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div class="year-accordion-content">
+                <div class="semesters-stack">
+                  <!-- I Semestre 2028 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> I Semestre 2028</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2028 - I Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2028 - I Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2028 - I Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2028 - I Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2028 - I Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2028 - I Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2028 - I Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2028 - I Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2028 - I Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2028 - I Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2028 - I Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2028 - I Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2028 - I Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2028 - I Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2028 - I Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2028 - I Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2028 - I Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2028 - I Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2028 - I Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2028 - I Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2028 - I Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2028 - I Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2028 - I Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2028 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- II Semestre 2028 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> II Semestre 2028</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2028 - II Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2028 - II Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2028 - II Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2028 - II Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2028 - II Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2028 - II Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2028 - II Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2028 - II Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2028 - II Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2028 - II Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2028 - II Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2028 - II Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2028 - II Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2028 - II Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2028 - II Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2028 - II Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2028 - II Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2028 - II Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2028 - II Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2028 - II Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2028 - II Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2028 - II Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2028 - II Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2028 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= AÑO 2029 ================= -->
+            <div class="year-accordion-item">
+              <div class="year-accordion-header" onclick="toggleYearAccordion(this)">
+                <div class="year-header-left">
+                  <span class="year-badge">2029</span>
+                  <span class="year-title">Informes de Labores 2029</span>
+                </div>
+                <div class="circle-arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div class="year-accordion-content">
+                <div class="semesters-stack">
+                  <!-- I Semestre 2029 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> I Semestre 2029</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2029 - I Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2029 - I Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2029 - I Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2029 - I Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2029 - I Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2029 - I Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2029 - I Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2029 - I Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2029 - I Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2029 - I Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2029 - I Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2029 - I Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2029 - I Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2029 - I Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2029 - I Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2029 - I Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2029 - I Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2029 - I Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2029 - I Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2029 - I Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2029 - I Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2029 - I Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2029 - I Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2029 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- II Semestre 2029 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> II Semestre 2029</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2029 - II Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2029 - II Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2029 - II Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2029 - II Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2029 - II Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2029 - II Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2029 - II Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2029 - II Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2029 - II Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2029 - II Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2029 - II Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2029 - II Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2029 - II Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2029 - II Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2029 - II Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2029 - II Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2029 - II Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2029 - II Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2029 - II Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2029 - II Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2029 - II Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2029 - II Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2029 - II Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2029 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ================= AÑO 2030 ================= -->
+            <div class="year-accordion-item">
+              <div class="year-accordion-header" onclick="toggleYearAccordion(this)">
+                <div class="year-header-left">
+                  <span class="year-badge">2030</span>
+                  <span class="year-title">Informes de Labores 2030</span>
+                </div>
+                <div class="circle-arrow-btn"><i class="fa fa-chevron-down"></i></div>
+              </div>
+              <div class="year-accordion-content">
+                <div class="semesters-stack">
+                  <!-- I Semestre 2030 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> I Semestre 2030</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2030 - I Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2030 - I Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2030 - I Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2030 - I Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2030 - I Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2030 - I Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2030 - I Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2030 - I Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2030 - I Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2030 - I Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2030 - I Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2030 - I Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2030 - I Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2030 - I Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2030 - I Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2030 - I Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2030 - I Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2030 - I Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2030 - I Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2030 - I Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2030 - I Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2030 - I Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2030 - I Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2030 I Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- II Semestre 2030 -->
+                  <div class="semester-card" onclick="toggleSemester(this, event)">
+                    <div class="semester-card-header">
+                      <span><i class="fa fa-calendar-o" style="color: #003B70; margin-right: 8px;"></i> II Semestre 2030</span>
+                      <i class="fa fa-chevron-down semester-arrow"></i>
+                    </div>
+                    <div class="semester-card-body" onclick="event.stopPropagation()">
+                      <div class="professors-list-stack">
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Adrián Jaén España (2030 - II Sem.)', 'Informe de labores del profesor Adrián Jaén España.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Adrián Jaén España</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Adrián Jaén España - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angeline Calvo Quirós (2030 - II Sem.)', 'Informe de labores de la profesora Angeline Calvo Quirós.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angeline Calvo Quirós</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angeline Calvo Quirós - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Angie Rojas Marín (2030 - II Sem.)', 'Informe de labores de la profesora Angie Rojas Marín.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Angie Rojas Marín</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Angie Rojas Marín - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ardui Zur Flores Calderón (2030 - II Sem.)', 'Informe de labores del profesor Ardui Zur Flores Calderón.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ardui Zur Flores Calderón</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ardui Zur Flores Calderón - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Ariadne Camacho Arias (2030 - II Sem.)', 'Informe de labores de la profesora Ariadne Camacho Arias.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Ariadne Camacho Arias</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Ariadne Camacho Arias - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Benjamín Campos Chavarría (2030 - II Sem.)', 'Informe de labores del profesor Benjamín Campos Chavarría.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Benjamín Campos Chavarría</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Benjamín Campos Chavarría - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Berenice Mora Benavides (2030 - II Sem.)', 'Informe de labores de la profesora Berenice Mora Benavides.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Berenice Mora Benavides</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Berenice Mora Benavides - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Rodolfo González Zúñiga (2030 - II Sem.)', 'Informe de labores del profesor Rodolfo González Zúñiga.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Rodolfo González Zúñiga</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Rodolfo González Zúñiga - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Daniel Pérez Murillo (2030 - II Sem.)', 'Informe de labores del profesor Daniel Pérez Murillo.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Daniel Pérez Murillo</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Daniel Pérez Murillo - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Erick Francisco Salas Acuña (2030 - II Sem.)', 'Informe de labores del profesor Erick Francisco Salas Acuña.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Erick Francisco Salas Acuña</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Erick Francisco Salas Acuña - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Francisco Céspedes Obando (2030 - II Sem.)', 'Informe de labores del profesor Francisco Céspedes Obando.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Francisco Céspedes Obando</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Francisco Céspedes Obando - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Gabriela Hernández Salazar (2030 - II Sem.)', 'Informe de labores de la profesora Gabriela Hernández Salazar.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Gabriela Hernández Salazar</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Gabriela Hernández Salazar - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Karina Corella Esquivel (2030 - II Sem.)', 'Informe de labores de la profesora Karina Corella Esquivel.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Karina Corella Esquivel</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Karina Corella Esquivel - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Lady Fernández Mora (2030 - II Sem.)', 'Informe de labores de la profesora Lady Fernández Mora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Lady Fernández Mora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Lady Fernández Mora - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Albán Arias Sosa (2030 - II Sem.)', 'Informe de labores del profesor Luis Albán Arias Sosa.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Albán Arias Sosa</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Albán Arias Sosa - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Luis Felipe Sancho Jiménez (2030 - II Sem.)', 'Informe de labores del profesor Luis Felipe Sancho Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Luis Felipe Sancho Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Luis Felipe Sancho Jiménez - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Marlon Pérez Pérez (2030 - II Sem.)', 'Informe de labores del profesor Marlon Pérez Pérez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Marlon Pérez Pérez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Marlon Pérez Pérez - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Michelle Ramírez López (2030 - II Sem.)', 'Informe de labores de la profesora Michelle Ramírez López.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Michelle Ramírez López</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Michelle Ramírez López - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Miguel Hernández Romero (2030 - II Sem.)', 'Informe de labores del profesor Miguel Hernández Romero.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Miguel Hernández Romero</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Miguel Hernández Romero - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Oscar Chaves Jiménez (2030 - II Sem.)', 'Informe de labores del profesor Oscar Chaves Jiménez.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Oscar Chaves Jiménez</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Oscar Chaves Jiménez - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Patricia López Estrada (2030 - II Sem.)', 'Informe de labores de la profesora Patricia López Estrada.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Patricia López Estrada</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Patricia López Estrada - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Shi Alarcón Zamora (2030 - II Sem.)', 'Informe de labores del profesor Shi Alarcón Zamora.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Shi Alarcón Zamora</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Shi Alarcón Zamora - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="professor-item" onclick="loadDocumentInViewer(event, 'Informe de Labores - Sonia Villegas Salas (2030 - II Sem.)', 'Informe de labores de la profesora Sonia Villegas Salas.')">
+                          <span><i class="fa fa-user-circle-o" style="color: #003B70; margin-right: 6px;"></i> Sonia Villegas Salas</span>
+                          <button class="btn-prof-add" onclick="addRecord(event, 'Sonia Villegas Salas - 2030 II Semestre (Informe)')"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- FIN COLUMNA IZQUIERDA -->
+
+          <!-- COLUMNA DERECHA: VISOR PROTEGIDO -->
+          <div class="viewer-container-box" style="background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 12px; box-shadow: 0px 4px 12px rgba(0,0,0,0.03); overflow: hidden; position: sticky; top: 20px;">
+            <div style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 12px; font-weight: 800; color: #64748B; letter-spacing: 0.5px; text-transform: uppercase;">VISOR DE INFORMES (PROTEGIDO)</span>
+              <span id="viewer-status-badge" style="background: #E2E8F0; color: #003B70; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Seleccione un profesor</span>
+            </div>
+            <div id="viewer-content-area" style="padding: 60px 30px; text-align: center; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <div style="width: 60px; height: 60px; background: #E0F2FE; color: #003B70; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 15px;">
+                <i class="fa fa-lock"></i>
+              </div>
+              <h3 style="color: #1E293B; font-size: 16px; font-weight: 700; margin: 0 0 8px 0;">Visualización segura de documentos</h3>
+              <p style="color: #64748B; font-size: 13.5px; margin: 0; max-width: 320px; line-height: 1.4;">Haga clic en cualquiera de los profesores de la lista para visualizar su informe de labores en pantalla.</p>
+            </div>
+          </div><!-- FIN COLUMNA DERECHA -->
+
+        </div> <!-- FIN LAYOUT DUAL -->
+
+      </div>
+    </div>
+  </div>
+</div>

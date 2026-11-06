@@ -1,0 +1,88 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="display: flex; flex-wrap: wrap; max-width: 1350px; margin: 0 auto;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; padding: 16px; margin: 30px 0px;">
+      
+      <!-- ENCABEZADO DE LA SECCIÓN -->
+      <div class="objective-header" style="margin-bottom: 25px;">
+        <span class="objective-badge" style="background-color: #E8F0FE; color: #003B70; font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">REPOSITORIO INSTITUCIONAL</span>
+        <h1 class="objective-title" style="color: #003B70; font-size: 28px; font-weight: 700; margin-top: 8px;">FUNDATEC</h1>
+        <p style="color: #64748B; font-size: 14.5px; margin-top: 5px;">Seleccione el proyecto o programa en el panel izquierdo para visualizar su documento oficial en tiempo real en el visor derecho.</p>
+      </div>
+
+      <!-- LAYOUT GENERAL DE 2 COLUMNAS -->
+      <div class="fundatec-split-layout">
+        
+        <!-- COLUMNA IZQUIERDA: LAS 3 TARJETAS INSTITUCIONALES -->
+        <div class="cards-column">
+          
+          <!-- Tarjeta 1: FDU -->
+          <div class="institutional-card active-card" onclick="loadFundatecDoc('https://drive.google.com/file/d/1Cv7VrgE3ZM1pCy_-6gSBDWTvrB6kFaKO/view?usp=drive_link', '04025701 - FDU Escuela Idiomas y Ciencias Sociales', 'Consulte la gestión administrativa y financiera canalizada por FUNDATEC.', this)">
+            <div class="card-left-indicator"></div>
+            <div class="card-content-wrapper">
+              <div class="card-icon-box"><i class="fa fa-folder-open"></i></div>
+              <div class="card-text-box">
+                <h3>04025701 - FDU Escuela Idiomas y Ciencias Sociales</h3>
+                <p>Consulte la gestión administrativa y financiera canalizada por FUNDATEC.</p>
+              </div>
+              <div class="card-arrow-box"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Certificación -->
+          <div class="institutional-card" onclick="loadFundatecDoc('https://drive.google.com/file/d/1pvHAE9uTQyOGAEDTXqDWI6Pd4HwrgfLW/view?usp=sharing', '07034901 - Certificación Dominio Idioma Inglés', 'Consulte los programas y procesos de certificación del área de inglés.', this)">
+            <div class="card-left-indicator"></div>
+            <div class="card-content-wrapper">
+              <div class="card-icon-box"><i class="fa fa-certificate"></i></div>
+              <div class="card-text-box">
+                <h3>07034901 - Certificación Dominio Idioma Inglés</h3>
+                <p>Consulte los programas y procesos de certificación del área de inglés.</p>
+              </div>
+              <div class="card-arrow-box"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Programa Inglés San Carlos -->
+          <div class="institutional-card" onclick="loadFundatecDoc('', '02083101 - Programa Inglés San Carlos', 'Consulte la oferta de cursos, capacitación y extensión en la región.', this)">
+            <div class="card-left-indicator"></div>
+            <div class="card-content-wrapper">
+              <div class="card-icon-box"><i class="fa fa-graduation-cap"></i></div>
+              <div class="card-text-box">
+                <h3>02083101 - Programa Inglés San Carlos</h3>
+                <p>Consulte la oferta de cursos, capacitación y extensión en la región.</p>
+              </div>
+              <div class="card-arrow-box"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA: VISOR PDF INTEGRADO -->
+        <div class="viewer-column">
+          <div class="pdf-viewer-card">
+            
+            <!-- Barra Superior del Visor -->
+            <div class="viewer-top-bar">
+              <span class="viewer-label-title">VISTA DEL DOCUMENTO</span>
+              <span id="viewer-status-badge" class="viewer-status-default">Documento activo</span>
+            </div>
+
+            <!-- Subtítulo de Descripción Dinámica -->
+            <div id="viewer-instruction-bar" class="viewer-sub-bar">
+              <strong>04025701 - FDU Escuela Idiomas y Ciencias Sociales</strong><br>
+              <span style="color: #475569; font-size: 13px;">Consulte la gestión administrativa y financiera canalizada por FUNDATEC.</span>
+            </div>
+
+            <!-- Cuerpo del Visor -->
+            <div class="viewer-display-body">
+              <!-- Iframe que carga por defecto el primer PDF al cargar la página -->
+              <iframe id="pdf-iframe-view" src="" width="100%" height="100%" style="border: none;"></iframe>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

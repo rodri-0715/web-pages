@@ -1,0 +1,128 @@
+/* ==========================================================================
+   ESTILOS PARA LA PÁGINA PRINCIPAL: DOCENTES / DOCENCIA
+   ========================================================================== */
+
+/* Contenedor principal de la tarjeta gris clara */
+.docentes-main-card {
+  background-color: #F0F4F9;
+  border-radius: 16px;
+  padding: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Badge superior azul claro */
+.docentes-badge {
+  display: inline-block;
+  background-color: #D3E2F4;
+  color: #003B70;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Título principal */
+.docentes-title {
+  color: #003B70;
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+}
+
+/* Descripción */
+.docentes-description {
+  color: #475569;
+  font-size: 14.5px;
+  margin: 0 0 28px 0;
+  line-height: 1.5;
+}
+
+/* Grilla de 2 columnas para las tarjetas */
+.docentes-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .docentes-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjeta interactiva blanca con borde azul izquierdo */
+.docente-card-item {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-left: 6px solid #003B70;
+  border-radius: 12px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.docente-card-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 59, 112, 0.08);
+  border-color: #003B70;
+}
+
+/* Lado izquierdo dentro de la tarjeta (icono + textos) */
+.docente-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Círculo celeste para icono */
+.docente-card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #DDE8F8;
+  color: #003B70;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* Título de la tarjeta */
+.docente-card-title {
+  color: #003B70;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 4px 0;
+}
+
+/* Subtítulo de la tarjeta */
+.docente-card-desc {
+  color: #64748B;
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Flecha lateral derecha > */
+.docente-card-arrow {
+  color: #94A3B8;
+  font-size: 16px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.docente-card-item:hover .docente-card-arrow {
+  color: #003B70;
+  transform: translateX(3px);
+}

@@ -1,0 +1,961 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; padding: 16px; margin: 5px 0px;">
+      <!-- NAVEGACIÓN SECUNDARIA COMPACTA (MENÚ PÍLDORAS CENTRADO) -->
+      <div class="sub-navbar">
+        <div class="sub-navbar-container">
+          <span class="sub-nav-title"><i class="fa fa-folder-open-o"></i> Secciones:</span>
+          <div class="sub-nav-links"><a href="~/Autoevaluación-GST/" id="menu-gst" class="sub-nav-item">Autoevaluación GST</a><a href="~/Actualización-de-programas/" id="menu-actualizacion" class="sub-nav-item">Actualización de programas</a><a href="~/Produccion-academica/" id="menu-produccion" class="sub-nav-item">Producción académica</a></div>
+        </div>
+      </div>
+      <div class="objective-container">
+        <!-- ENCABEZADO DEL OBJETIVO -->
+        <div class="objective-header">
+          <span class="objective-badge">Objetivo 2.3</span>
+          <h1 class="objective-title">Propiciar la cultura de producción académica en la EICS</h1>
+        </div>
+        <!-- TARJETA DE META -->
+        <div class="meta-card">
+          <div class="meta-card-header"><span class="meta-tag">Meta 2.3.1</span></div>
+          <div class="meta-card-body"><p class="meta-description">Publicar al menos 5 productos académicos por área al año.</p></div>
+        </div>
+        <!-- SELECTOR DE AÑOS PRINCIPAL -->
+        <div class="years-container-box" style="background-color: #F0F4F8; padding: 12px 16px; border-radius: 10px; margin-bottom: 25px; border: 1px solid #D9E2EC;">
+          <div class="years-tabs" style="display: flex; gap: 8px; flex-wrap: wrap;"><button onclick="openYear(event, 'year-2025')" class="year-btn active">2025</button><button onclick="openYear(event, 'year-2026')" class="year-btn">2026</button><button onclick="openYear(event, 'year-2027')" class="year-btn">2027</button><button onclick="openYear(event, 'year-2028')" class="year-btn">2028</button><button onclick="openYear(event, 'year-2029')" class="year-btn">2029</button></div>
+        </div>
+        <!-- ========================================== --><!-- CONTENEDOR AÑO 2025 (Con datos reales)     --><!-- ========================================== -->
+        <div id="year-2025" class="year-content active">
+          <!-- Pestañas de Áreas (Incluyendo Turismo) -->
+          <div class="tabs-navigation">
+            <button onclick="switchTab(event, 'ingles-2025')" class="tab-btn active"><i class="fa fa-language me-2"></i> Inglés</button><button onclick="switchTab(event, 'sociales-2025')" class="tab-btn"><i class="fa fa-users me-2"></i> Ciencias Sociales</button><button onclick="switchTab(event, 'comunicacion-2025')" class="tab-btn"><i class="fa fa-comments me-2"></i> Comunicación</button><button onclick="switchTab(event, 'turismo-2025')" class="tab-btn"><i class="fa fa-map-signs me-2"></i> Turismo</button>
+          </div>
+          <!-- Inglés 2025 -->
+          <div id="ingles-2025" class="tab-content active">
+            <h3 class="area-subtitle">Tabla 20. Síntesis de los productos del área de inglés (2025)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Persona autora</th>
+                    <th style="width: 40%;">Título</th>
+                    <th style="width: 15%;">Tipo</th>
+                    <th style="width: 20%;">Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="docente-cell">Roberto Arguedas Zúñiga y Patricia López Estrada</td>
+                    <td>Un enfoque colaborativo entre el TEC y la UNA para la práctica de un segundo idioma en Costa Rica: el proyecto ¡Hábleme!</td>
+                    <td>Artículo</td>
+                    <td><a href="https://rc.cienciasas.org/index.php/rc/article/view/445" target="_blank" class="table-link">Región Científica</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Jazmín Vindas Carmona, Lucía Gutiérrez Corrales, Alejandra Riveros Orjuela</td>
+                    <td>Conversation Gambits Used to Enhance Communication in an English for Educators Course</td>
+                    <td>Artículo</td>
+                    <td><a href="https://archivo.revistas.ucr.ac.cr/index.php/rlm/article/view/58641" target="_blank" class="table-link">Revista de Lenguas Modernas, UCR</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Jazmín Vindas Carmona y Maureen Manley Baeza</td>
+                    <td>Hábitos de estudio para el aprendizaje del idioma inglés en estudiantes de sétimo año</td>
+                    <td>Artículo</td>
+                    <td><a href="https://archivo.revistas.ucr.ac.cr/index.php/intersedes/article/view/57429/62474" target="_blank" class="table-link">Revista InterSedes, UCR</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>Rethinking Professional Development as a Reflective and Constant Teacher Need: Are You Willing to Jump?</td>
+                    <td>Ponencia magistral</td>
+                    <td><a href="https://mextesol.org.mx/" target="_blank" class="table-link">Mexican Association of English Teachers (MEXTESOL)</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>Investigar para enseñar y aprender mejor: El poder de la investigación aplicada en la formación docente</td>
+                    <td>Ponencia magistral</td>
+                    <td><a href="https://www.youtube.com/watch?v=e9_NRAEkYkw" target="_blank" class="table-link">3er. Congreso Internacional de Formación Docente en Lenguas</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>Repensar, encarnar y reflexionar sobre el desarrollo profesional docente</td>
+                    <td>Ponencia magistral</td>
+                    <td><a href="https://vidauniversitaria.uanl.mx/campus-uanl/hacia-nuevos-aprendizajes-2a-jornada-de-innovacion-educativa/" target="_blank" class="table-link">2da Jornada de Innovación Educativa</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>Educación Superior con sentido: Transformando la universidad desde la pertinencia y el territorio</td>
+                    <td>Ponencia plenaria</td>
+                    <td><a href="https://www.congresoeducacionsuperior.com/inicio" target="_blank" class="table-link">Congreso Latinoamericano de Educación Superior</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Marlon Pérez Pérez</td>
+                    <td>Leveraging Gemini as Your ESL Teaching Assistant</td>
+                    <td>Ponencia</td>
+                    <td>V Congreso de la Enseñanza del Inglés</td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Jazmín Vindas Carmona</td>
+                    <td>How to Apply Linguistic Resources in ESP</td>
+                    <td>Ponencia</td>
+                    <td>V Congreso de la Enseñanza del Inglés</td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>El inglés como eje de desarrollo en la Región Huetar Norte: Una mirada desde la investigación, la extensión y la vinculación</td>
+                    <td>Divulgación</td>
+                    <td><a href="https://www.tec.ac.cr/hoyeneltec/2025/08/12/ingles-eje-desarrollo-region-huetar-norte-mirada-investigacion-extension-vinculacion" target="_blank" class="table-link">Hoy en el TEC</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Patricia López Estrada</td>
+                    <td>Rindiendo homenaje a mujeres escritoras de San Carlos.</td>
+                    <td>Divulgación</td>
+                    <td><a href="https://revistas.tec.ac.cr/index.php/ventana/article/view/8204" target="_blank" class="table-link">Ventana</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Karina Corella Esquivel, Ana Castro Vega, Patricia López Estrada y Oscar Chaves Jiménez</td>
+                    <td>Semblanza de la Escuela de Idiomas y Ciencias Sociales</td>
+                    <td>Reseña</td>
+                    <td><a href="https://www.tec.ac.cr/semblanza-escuela-idiomas-ciencias-sociales-2015-2025" target="_blank" class="table-link">Portal web EICS</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note"><strong>Nota.</strong> Información tomada de la evidencia presentada por la coordinadora de área Dra. Patricia López Estrada. Se resalta el nombre de la persona que trabaja en la EICS[cite: 9].</p>
+          </div>
+          <!-- Ciencias Sociales 2025 -->
+          <div id="sociales-2025" class="tab-content">
+            <h3 class="area-subtitle">Tabla 21. Síntesis de los productos del área de ciencias sociales (2025)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Persona autora</th>
+                    <th style="width: 40%;">Título</th>
+                    <th style="width: 15%;">Tipo</th>
+                    <th style="width: 20%;">Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="docente-cell">Rodolfo González Zúñiga y Tobías Murillo Pérez</td>
+                    <td>Cronología de la enseñanza de la filosofía en la educación secundaria de Costa Rica.</td>
+                    <td>Artículo</td>
+                    <td><a href="https://azurrevista.com/wp-content/uploads/2025/02/Cronologia-de-la-ensenanza-de-la-filosofia-en-la-educacion-secundaria-de-Costa-Rica-2010-2023.pdf" target="_blank" class="table-link">Revista Azur</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>¿Acciones afirmativas o privilegio? Análisis de las reacciones en la prensa sobre la suspensión de la prueba de aptitud académica en el Instituto Tecnológico de Costa Rica, en 2020</td>
+                    <td>Artículo</td>
+                    <td><a href="https://www.scielo.sa.cr/scielo.php?script=sci_arttext&amp;pid=S2215-454X2025000100041" target="_blank" class="table-link">Revista Espiga</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>El crimen del fiordo de Ragnar Jónasson</td>
+                    <td>Reseña</td>
+                    <td><a href="https://delfino.cr/2025/08/resena-de-el-crimen-del-fiordo-de-ragnar-jonasson" target="_blank" class="table-link">Delfinocrt</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>Catedrales de Claudia Piñeiro</td>
+                    <td>Reseña</td>
+                    <td><a href="https://delfino.cr/2025/09/resena-de-catedrales-de-claudia-pineiro" target="_blank" class="table-link">Delfinocrt</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>Nicaragua 2018 en dos novelas: Gioconda Belli y Sergio Ramírez</td>
+                    <td>Reseña</td>
+                    <td><a href="https://delfino.cr/2025/04/nicaragua-2018-en-dos-novelas-gioconda-belli-y-sergio-ramirez" target="_blank" class="table-link">Delfinocrt</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>El niño que perdió la guerra de Julia Navarro</td>
+                    <td>Reseña</td>
+                    <td><a href="https://delfino.cr/2025/02/resena-de-el-nino-que-perdio-la-guerra-nueva-novela-julia-navarro" target="_blank" class="table-link">Delfinocrt</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>La hija única de Guadalupe Nettel</td>
+                    <td>Reseña</td>
+                    <td><a href="https://www.tec.ac.cr/hoyeneltec/2025/05/22/resena-critica-hija-unica-guadalupe-nettel" target="_blank" class="table-link">Hoy en el TEC</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>La vegetariana de Han Kang</td>
+                    <td>Reseña</td>
+                    <td><a href="https://www.tec.ac.cr/hoyeneltec/2025/01/20/resena-vegetariana-han-kang-ganadora-premio-nobel-literatura-2024" target="_blank" class="table-link">Hoy en el TEC</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Benjamín Campos Chavarría</td>
+                    <td>Temporada de huracanes de Fernanda Melchor</td>
+                    <td>Reseña</td>
+                    <td><a href="https://www.tec.ac.cr/hoyeneltec/2025/03/13/resena-critica-temporada-huracanes-fernanda-Melchor" target="_blank" class="table-link">Hoy en el TEC</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note"><strong>Nota.</strong> Información tomada de la evidencia presentada por el coordinador de área MPhil. Carlos Rodolfo González Zúñiga. Se resalta el nombre de la persona que trabaja en la EICS[cite: 9].</p>
+          </div>
+          <!-- Comunicación 2025 -->
+          <div id="comunicacion-2025" class="tab-content">
+            <h3 class="area-subtitle">Tabla 22. Síntesis de los productos del área de comunicación (2025)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Persona autora</th>
+                    <th style="width: 40%;">Título</th>
+                    <th style="width: 15%;">Tipo</th>
+                    <th style="width: 20%;">Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="docente-cell">Erick Salas Acuña, Karina Corella Esquivel y Ariadne Camacho Arias</td>
+                    <td>Caracterización de la citación en ensayos de estudiantes universitarios en una etapa de formación inicial</td>
+                    <td>Artículo</td>
+                    <td><a href="https://revistas.uned.ac.cr/index.php/innovaciones/es/article/view/5626" target="_blank" class="table-link">Innovaciones educativas UNED</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Erick Salas Acuña</td>
+                    <td>El juego de la imitación</td>
+                    <td>Opinión</td>
+                    <td><a href="https://www.tec.ac.cr/hoyeneltec/2025/05/02/juego-imitacion" target="_blank" class="table-link">Hoy en el TEC</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Karina Corella Esquivel, Ana Castro Vega, Patricia López Estrada y Oscar Chaves Jiménez</td>
+                    <td>Semblanza de la Escuela de Idiomas y Ciencias Sociales</td>
+                    <td>Reseña</td>
+                    <td><a href="https://www.tec.ac.cr/semblanza-escuela-idiomas-ciencias-sociales-2015-2025" target="_blank" class="table-link">Portal web EICS</a></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Erick Salas Acuña</td>
+                    <td>La escritura académica en las universidades públicas costarricenses: Aportes para su estudio</td>
+                    <td>Ponencia</td>
+                    <td>V Congreso Internacional ALES y VIII Encuentro REDLEES</td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Ariadne Camacho Arias</td>
+                    <td>Material de apoyo para taller sobre APA 7</td>
+                    <td>Obra didáctica</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Ariadne Camacho Arias</td>
+                    <td>Práctica sobre usos de APA 7</td>
+                    <td>Obra didáctica</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="docente-cell">Karina Corella Esquivel y Douglas Valerio Barrantes</td>
+                    <td>¿Cómo elaborar una declaración de originalidad?</td>
+                    <td>Obra didáctica</td>
+                    <td><a href="https://www.youtube.com/watch?v=sq9-v-Cvpg8" target="_blank" class="table-link">YouTube</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note"><strong>Nota.</strong> Información tomada de la evidencia presentada por la coordinadora de área MEd. Ariadne Camacho Arias. Se resalta el nombre de la persona que trabaja en la EICS[cite: 9].</p>
+          </div>
+          <!-- Turismo 2025 -->
+          <div id="turismo-2025" class="tab-content">
+            <h3 class="area-subtitle">Productos del área de turismo (2025)</h3>
+            <div style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 25px; text-align: center;"><p style="margin: 0; font-size: 14px; color: #64748B; font-style: italic;">No hubo registro para el año 2025 en el área de turismo.</p></div>
+          </div>
+          <!-- Tabla 23: Síntesis General 2025 -->
+          <div class="summary-standalone-card">
+            <div class="summary-header">
+              <h3 class="summary-title"><i class="fa fa-bar-chart me-2"></i> Tabla 23. Síntesis de la Meta 2.3.1 (2025)</h3>
+              <span class="summary-badge">Resumen General</span>
+            </div>
+            <div class="table-responsive-container">
+              <table class="custom-data-table text-center">
+                <thead>
+                  <tr>
+                    <th class="text-start" style="width: 18%;">Área</th>
+                    <th style="width: 9%;">Docentes</th>
+                    <th style="width: 15%;">Elaboraron productos</th>
+                    <th style="width: 7%;">Artículo</th>
+                    <th style="width: 8%;">Ponencia Magistral</th>
+                    <th style="width: 7%;">Ponencia</th>
+                    <th style="width: 8%;">Divulgación</th>
+                    <th style="width: 7%;">Opinión</th>
+                    <th style="width: 7%;">Reseña</th>
+                    <th style="width: 8%;">Obra Didáctica</th>
+                    <th style="width: 9%; background-color: #002D57;" bgcolor="#002D57">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-start docente-cell"><strong>Inglés</strong></td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><strong class="total-cell">11</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start docente-cell"><strong>Ciencias Sociales</strong></td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>7</td>
+                    <td>-</td>
+                    <td><strong class="total-cell">9</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start docente-cell"><strong>Comunicación</strong></td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td><strong class="total-cell">7</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="text-start docente-cell"><strong>Turismo</strong></td>
+                    <td>4</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><strong class="total-cell">0</strong></td>
+                  </tr>
+                  <tr class="total-row">
+                    <td class="text-start">Total</td>
+                    <td>22</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td class="final-total">27</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note"><strong>Nota.</strong> Información tomada de las evidencias presentadas por los coordinadores de área[cite: 9].</p>
+          </div>
+        </div>
+        <!-- FIN 2025 --><!-- ========================================== --><!-- AÑOS A FUTURO (2026 al 2029) CON 3 FILAS   --><!-- DE "[Sin registro]" POR CADA ÁREA          --><!-- ========================================== --><!-- INICIO CONTENEDOR AÑO 2026 -->
+        <div id="year-2026" class="year-content">
+          <div class="tabs-navigation">
+            <button onclick="switchTab(event, 'ingles-2026')" class="tab-btn active"><i class="fa fa-language me-2"></i> Inglés</button><button onclick="switchTab(event, 'sociales-2026')" class="tab-btn"><i class="fa fa-users me-2"></i> Ciencias Sociales</button><button onclick="switchTab(event, 'comunicacion-2026')" class="tab-btn"><i class="fa fa-comments me-2"></i> Comunicación</button><button onclick="switchTab(event, 'turismo-2026')" class="tab-btn"><i class="fa fa-map-signs me-2"></i> Turismo</button>
+          </div>
+          <!-- Área Inglés - 2026 -->
+          <div id="ingles-2026" class="tab-content active">
+            <h3 class="area-subtitle">Tabla 20. Síntesis de los productos del área de inglés (2026)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Ciencias Sociales - 2026 -->
+          <div id="sociales-2026" class="tab-content">
+            <h3 class="area-subtitle">Tabla 21. Síntesis de los productos del área de ciencias sociales (2026)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Comunicación - 2026 -->
+          <div id="comunicacion-2026" class="tab-content">
+            <h3 class="area-subtitle">Tabla 22. Síntesis de los productos del área de comunicación (2026)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Turismo - 2026 -->
+          <div id="turismo-2026" class="tab-content">
+            <h3 class="area-subtitle">Productos del área de turismo (2026)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR AÑO 2026 --><!-- INICIO CONTENEDOR AÑO 2027 -->
+        <div id="year-2027" class="year-content">
+          <div class="tabs-navigation">
+            <button onclick="switchTab(event, 'ingles-2027')" class="tab-btn active"><i class="fa fa-language me-2"></i> Inglés</button><button onclick="switchTab(event, 'sociales-2027')" class="tab-btn"><i class="fa fa-users me-2"></i> Ciencias Sociales</button><button onclick="switchTab(event, 'comunicacion-2027')" class="tab-btn"><i class="fa fa-comments me-2"></i> Comunicación</button><button onclick="switchTab(event, 'turismo-2027')" class="tab-btn"><i class="fa fa-map-signs me-2"></i> Turismo</button>
+          </div>
+          <!-- Área Inglés - 2027 -->
+          <div id="ingles-2027" class="tab-content active">
+            <h3 class="area-subtitle">Tabla 20. Síntesis de los productos del área de inglés (2027)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Ciencias Sociales - 2027 -->
+          <div id="sociales-2027" class="tab-content">
+            <h3 class="area-subtitle">Tabla 21. Síntesis de los productos del área de ciencias sociales (2027)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Comunicación - 2027 -->
+          <div id="comunicacion-2027" class="tab-content">
+            <h3 class="area-subtitle">Tabla 22. Síntesis de los productos del área de comunicación (2027)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Turismo - 2027 -->
+          <div id="turismo-2027" class="tab-content">
+            <h3 class="area-subtitle">Productos del área de turismo (2027)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR AÑO 2027 --><!-- INICIO CONTENEDOR AÑO 2028 -->
+        <div id="year-2028" class="year-content">
+          <div class="tabs-navigation">
+            <button onclick="switchTab(event, 'ingles-2028')" class="tab-btn active"><i class="fa fa-language me-2"></i> Inglés</button><button onclick="switchTab(event, 'sociales-2028')" class="tab-btn"><i class="fa fa-users me-2"></i> Ciencias Sociales</button><button onclick="switchTab(event, 'comunicacion-2028')" class="tab-btn"><i class="fa fa-comments me-2"></i> Comunicación</button><button onclick="switchTab(event, 'turismo-2028')" class="tab-btn"><i class="fa fa-map-signs me-2"></i> Turismo</button>
+          </div>
+          <!-- Área Inglés - 2028 -->
+          <div id="ingles-2028" class="tab-content active">
+            <h3 class="area-subtitle">Tabla 20. Síntesis de los productos del área de inglés (2028)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Ciencias Sociales - 2028 -->
+          <div id="sociales-2028" class="tab-content">
+            <h3 class="area-subtitle">Tabla 21. Síntesis de los productos del área de ciencias sociales (2028)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Comunicación - 2028 -->
+          <div id="comunicacion-2028" class="tab-content">
+            <h3 class="area-subtitle">Tabla 22. Síntesis de los productos del área de comunicación (2028)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Turismo - 2028 -->
+          <div id="turismo-2028" class="tab-content">
+            <h3 class="area-subtitle">Productos del área de turismo (2028)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR AÑO 2028 --><!-- INICIO CONTENEDOR AÑO 2029 -->
+        <div id="year-2029" class="year-content">
+          <div class="tabs-navigation">
+            <button onclick="switchTab(event, 'ingles-2029')" class="tab-btn active"><i class="fa fa-language me-2"></i> Inglés</button><button onclick="switchTab(event, 'sociales-2029')" class="tab-btn"><i class="fa fa-users me-2"></i> Ciencias Sociales</button><button onclick="switchTab(event, 'comunicacion-2029')" class="tab-btn"><i class="fa fa-comments me-2"></i> Comunicación</button><button onclick="switchTab(event, 'turismo-2029')" class="tab-btn"><i class="fa fa-map-signs me-2"></i> Turismo</button>
+          </div>
+          <!-- Área Inglés - 2029 -->
+          <div id="ingles-2029" class="tab-content active">
+            <h3 class="area-subtitle">Tabla 20. Síntesis de los productos del área de inglés (2029)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Ciencias Sociales - 2029 -->
+          <div id="sociales-2029" class="tab-content">
+            <h3 class="area-subtitle">Tabla 21. Síntesis de los productos del área de ciencias sociales (2029)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Comunicación - 2029 -->
+          <div id="comunicacion-2029" class="tab-content">
+            <h3 class="area-subtitle">Tabla 22. Síntesis de los productos del área de comunicación (2029)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Área Turismo - 2029 -->
+          <div id="turismo-2029" class="tab-content">
+            <h3 class="area-subtitle">Productos del área de turismo (2029)</h3>
+            <div class="table-responsive-container">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th>Persona autora</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Medio de publicación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td style="color: #94A3B8; font-style: italic;">[Sin registro]</td>
+                    <td class="text-center">*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CONTENEDOR AÑO 2029 -->
+      </div>
+    </div>
+  </div>
+</div>

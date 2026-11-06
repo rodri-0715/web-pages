@@ -1,0 +1,285 @@
+.eics-section-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: inherit;
+}
+
+.eics-section-header {
+  margin-bottom: 25px;
+}
+
+.eics-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #02325c;
+  background: #E0F2FE;
+  padding: 4px 10px;    
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.eics-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #003B70;
+  margin: 0 0 6px 0;
+  text-shadow: none !important;
+  white-space: nowrap;
+}
+
+.eics-subtitle {
+  font-size: 14px;
+  color: #64748B;
+  margin: 0;
+}
+
+/* DISEÑO DE DOS COLUMNAS */
+.eics-main-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.eics-left-column {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eics-right-column {
+  flex: 1;
+}
+
+/* Responsivo para celulares o tablets */
+@media (max-width: 900px) {
+  .eics-main-layout {
+    flex-direction: column;
+  }   
+}
+
+/* ESTILOS DE LAS TARJETAS */
+.eics-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-left: 4px solid #003B70;
+  border-radius: 12px;
+  padding: 22px 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.eics-card:hover {
+  border-color: #0284C7;
+  border-left-color: #0284C7;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+}
+
+.eics-card-mapa {
+  border-left-color: #D97706; /* Línea diferencial color ámbar/dorado para el mapa */
+}
+.eics-card-mapa:hover {
+  border-left-color: #F59E0B;
+  border-color: #F59E0B;
+}
+
+.eics-card-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.eics-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background-color: #E0F2FE;
+  color: #0284C7;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.eics-icon-svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.eics-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #003B70;
+  margin: 0 0 4px 0;
+}
+
+.eics-card-desc {
+  font-size: 13px;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.eics-card-arrow {
+  color: #94A3B8;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 12px;
+}
+
+.eics-card:hover .eics-card-arrow {
+  color: #0284C7;
+}
+
+/* ESTILOS DEL VISOR A LA DERECHA */
+.eics-visor-box {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-top: 4px solid #003B70;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.eics-visor-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #F1F5F9;
+  padding-bottom: 15px;
+}
+
+.eics-visor-icon {
+  font-size: 24px;
+  background: #E0F2FE;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.eics-visor-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #042a4c;
+  margin: 0 0 2px 0;
+}
+
+.eics-visor-subtitle {
+  font-size: 12px;
+  color: #64748B;
+  margin: 0;
+}
+
+.eics-visor-content-area {
+  background: #F8FAFC;
+  border: 2px dashed #CBD5E1;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eics-visor-placeholder {
+  font-size: 13px;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* DISEÑO DE DOS COLUMNAS - Damos más espacio al visor a la derecha */
+.eics-main-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.eics-left-column {
+  flex: 1; /* Tarjetas a la izquierda */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eics-right-column {
+  flex: 1.4; /* Visor más ancho y grande a la derecha */
+}
+
+/* ESTILOS DEL VISOR (Sin la línea azul superior y con mayor altura) */
+.eics-visor-box {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-top: none !important; /* Elimina por completo la línea azul superior */
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.eics-visor-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.eics-visor-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.eics-visor-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #003B70;
+  background: #E0F2FE;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.eics-visor-desc {
+  font-size: 13px;
+  color: #475569;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+  background: #F8FAFC;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 3px solid #0284C7;
+}
+
+/* Altura mayor para ver el documento de Google Drive con total comodidad */
+.eics-visor-content-area {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 650px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eics-visor-placeholder {
+  font-size: 13px;
+  color: #64748B;
+  text-align: center;
+  padding: 20px;
+}
