@@ -1,0 +1,8 @@
+@import url('https://content.powerapps.com/resource/powerappsportal/fonts/bitter/v32/400.css');
+@import url('https://content.powerapps.com/resource/powerappsportal/fonts/bitter/v32/400-italic.css');
+    /* Quitar sombra al título de Presentación */
+h1, h2, .section-title, .text-center {
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
